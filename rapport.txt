@@ -18,6 +18,7 @@
 \usepackage{ragged2e}
 \usepackage{float}
 \usepackage{seqsplit}
+\usepackage{amsmath}
 \usepackage{indentfirst}
 \usepackage{setspace}
 \usepackage{hyperref}
@@ -110,7 +111,7 @@
 
 {\large Détection synergique d'anomalies réseau par système multi-agents sur graphes de connaissances - application aux réseaux de télécommunications}\\[1.2em]
 \noindent\begin{tabular}{@{}ll}
-  Étudiants    & SIGNORETTI Andrea, DES BOSCS Raphaël, CHICHE Paul, QILE Liu\\
+  Étudiants    &  DES BOSCS Raphaël, CHICHE Paul, SIGNORETTI Andrea,  QILE Liu\\
   Tuteur       & TAILHARDAT Lionel, Chercheur IA chez Orange \\
   Coordinateur & LUTZEYER Johannes, Professeur assistant, LIX
 \end{tabular}

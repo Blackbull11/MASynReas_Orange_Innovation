@@ -17,5 +17,14 @@
      run_python("src/agt/functional/aposteriori/service_without_ticket_escalation_detector.py");
      .print("[ServiceWithoutTicketEscalationDetector] Detection finished.") .
 
-{ include("$jacamo/templates/common-cartago.asl") }
-{ include("$jacamo/templates/common-moise.asl") }
+// Suppress Jason NPE on unhandled observable-property / signal events
++selected_mode(_) <- true.
++last_run_status(_) <- true.
++dataset_id(_) <- true.
++expected_mode_runs(_, _) <- true.
++python_finished(_, _)[artifact_id(_)] <- true.
++python_failed(_, _)[artifact_id(_)] <- true.
+
+// Universal catch-all: prevent Jason NPE on any unhandled belief event
++E <- true.
+-E <- true.

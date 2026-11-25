@@ -18,6 +18,14 @@
      run_python("src/agt/structural/apriori/orphan_resource_detector.py");
      .print("[OrphanResourceDetector] Detection finished.") .
 
+// Suppress Jason NPE on unhandled observable-property / signal events
++selected_mode(_) <- true.
++last_run_status(_) <- true.
++dataset_id(_) <- true.
++expected_mode_runs(_, _) <- true.
++python_finished(_, _)[artifact_id(_)] <- true.
++python_failed(_, _)[artifact_id(_)] <- true.
 
-{ include("$jacamo/templates/common-cartago.asl") }
-{ include("$jacamo/templates/common-moise.asl") }
+// Universal catch-all: prevent Jason NPE on any unhandled belief event
++E <- true.
+-E <- true.
