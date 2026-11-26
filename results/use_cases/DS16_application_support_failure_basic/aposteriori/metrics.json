@@ -1,0 +1,97 @@
+{
+  "dataset_id": "DS16_application_support_failure_basic",
+  "mode": "aposteriori",
+  "conventions": "P=1 if TP+FP=0; R=1 if TP+FN=0; F1=0 if P+R=0. L2 ranking = triggered diagnosers sorted by max priority_score (tie: reliability, name). L1 = detectors with a non-empty JSON.",
+  "level1": {
+    "expected_nonempty": [
+      "functional/application_incident_without_resource_detector",
+      "structural/application_mapping_inconsistency_detector"
+    ],
+    "actual_nonempty": [
+      "functional/application_incident_without_resource_detector",
+      "functional/resource_event_without_service_impact_detector",
+      "structural/isolated_incident_resource_detector",
+      "structural/spatial_incident_cluster_detector"
+    ],
+    "hit": [
+      "functional/application_incident_without_resource_detector"
+    ],
+    "missed": [
+      "structural/application_mapping_inconsistency_detector"
+    ],
+    "extra": [
+      "functional/resource_event_without_service_impact_detector",
+      "structural/isolated_incident_resource_detector",
+      "structural/spatial_incident_cluster_detector"
+    ],
+    "tp": 1,
+    "fp": 3,
+    "fn": 1,
+    "precision": 0.25,
+    "recall": 0.5,
+    "f1": 0.333,
+    "bindings_per_detector": {
+      "dynamic/change_followed_by_incident_detector": 0,
+      "dynamic/change_overlap_conflict": 0,
+      "dynamic/critical_event_ticket_escalation_detector": 0,
+      "dynamic/event_burst_detector": 0,
+      "dynamic/flapping_state_detector": 0,
+      "dynamic/incident_propagation_detector": 0,
+      "dynamic/multi_element_synchronous_incident_detector": 0,
+      "dynamic/parent_child_event_escalation_detector": 0,
+      "dynamic/reopened_incident_detector": 0,
+      "dynamic/repeated_similar_event_detector": 0,
+      "dynamic/silent_degradation_after_change_detector": 0,
+      "dynamic/stale_incident_detector": 0,
+      "functional/application_incident_without_resource_detector": 1,
+      "functional/cascading_service_failure_detector": 0,
+      "functional/conflicting_application_state_detector": 0,
+      "functional/hidden_service_dependency_detector": 0,
+      "functional/module_level_incident_aggregation_detector": 0,
+      "functional/resource_event_without_service_impact_detector": 1,
+      "functional/service_impacted_by_multiple_resources_detector": 0,
+      "functional/service_with_repeated_incident_detector": 0,
+      "functional/service_without_ticket_escalation_detector": 0,
+      "procedural/change_linked_to_multiple_incidents_detector": 0,
+      "procedural/incident_without_ticket_detector": 0,
+      "procedural/ticket_without_linked_event_detector": 0,
+      "structural/application_mapping_inconsistency_detector": 0,
+      "structural/child_component_incident_escalation_detector": 0,
+      "structural/high_impact_resource_detector": 0,
+      "structural/incident_on_incomplete_link_detector": 0,
+      "structural/isolated_incident_resource_detector": 4,
+      "structural/no_redundancy_incident_detector": 0,
+      "structural/spatial_incident_cluster_detector": 1
+    }
+  },
+  "level2": {
+    "expected": [
+      "application_support_failure_diagnoser"
+    ],
+    "triggered": [],
+    "detail": {
+      "application_support_failure_diagnoser": "FN",
+      "change_induced_incident_diagnoser": "TN",
+      "local_infrastructure_cluster_diagnoser": "TN",
+      "service_cascade_diagnoser": "TN",
+      "single_point_of_failure_diagnoser": "TN",
+      "traceability_breakdown_diagnoser": "TN",
+      "unstable_component_diagnoser": "TN"
+    },
+    "tp": 0,
+    "fp": 0,
+    "fn": 1,
+    "precision": 1.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "ranking_by_priority": [],
+    "rank_of_expected": {
+      "application_support_failure_diagnoser": null
+    },
+    "top1": null,
+    "top1_in_expected": false,
+    "reciprocal_rank": 0.0,
+    "manifest_ranking_expectation": null,
+    "top1_matches_manifest_order": null
+  }
+}

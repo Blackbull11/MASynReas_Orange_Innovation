@@ -1,0 +1,139 @@
+{
+  "agent": "procedural_unreadiness_diagnoser",
+  "mode": "apriori",
+  "activation_status": "triggered",
+  "reason": "Activation conditions satisfied around ChangeRequest 'change_switch_firmware_window'.",
+  "diagnoses": [
+    {
+      "diagnosis_id": "L2-A4-004",
+      "diagnosis_type": "procedural_unreadiness",
+      "mode": "apriori",
+      "target_type": "TroubleTicket",
+      "target_id": "https://example.org/masynreas/datasets/baseA/ticket_procedural_gap",
+      "activation_status": "triggered",
+      "reliability_score": 35,
+      "severity_score": 23,
+      "priority_score": 30,
+      "evidence": [
+        {
+          "level1_agent": "ticket_without_assigned_procedure_detector",
+          "role": "primary",
+          "matched_anchor": "https://example.org/masynreas/datasets/baseA/ticket_procedural_gap",
+          "record_count": 1,
+          "family": "procedural",
+          "result_file": "results/procedural/apriori/ticket_without_assigned_procedure_results.json"
+        }
+      ],
+      "severity_factors": {
+        "criticality": 10,
+        "breadth": 0,
+        "concentration": 0,
+        "temporal_aggravation": 0,
+        "governance_weakness": 5,
+        "family_base_bonus": 8
+      },
+      "criticalities": [
+        "https://example.org/masynreas/datasets/basea/priority_normal",
+        "https://example.org/masynreas/datasets/basea/severity_minor"
+      ],
+      "explanation": "Procedural unreadiness is diagnosed for TroubleTicket 'ticket_procedural_gap' because tickets have no assigned procedure converge on the same anchor. The evidence spans procedural signal family/families.",
+      "recommended_action": "Clarify operational procedures, scheduling, and ticket-to-procedure links for this anchor before incident pressure appears."
+    },
+    {
+      "diagnosis_id": "L2-A4-001",
+      "diagnosis_type": "procedural_unreadiness",
+      "mode": "apriori",
+      "target_type": "ChangeRequest",
+      "target_id": "https://example.org/masynreas/datasets/baseA/change_switch_firmware_window",
+      "activation_status": "triggered",
+      "reliability_score": 35,
+      "severity_score": 19,
+      "priority_score": 28,
+      "evidence": [
+        {
+          "level1_agent": "change_request_without_scheduled_time_detector",
+          "role": "primary",
+          "matched_anchor": "https://example.org/masynreas/datasets/baseA/change_switch_firmware_window",
+          "record_count": 1,
+          "family": "procedural",
+          "result_file": "results/procedural/apriori/change_request_without_scheduled_time_results.json"
+        }
+      ],
+      "severity_factors": {
+        "criticality": 0,
+        "breadth": 0,
+        "concentration": 0,
+        "temporal_aggravation": 6,
+        "governance_weakness": 5,
+        "family_base_bonus": 8
+      },
+      "criticalities": [],
+      "explanation": "Procedural unreadiness is diagnosed for ChangeRequest 'change_switch_firmware_window' because changes are missing scheduling information converge on the same anchor. The evidence spans procedural signal family/families.",
+      "recommended_action": "Clarify operational procedures, scheduling, and ticket-to-procedure links for this anchor before incident pressure appears."
+    },
+    {
+      "diagnosis_id": "L2-A4-002",
+      "diagnosis_type": "procedural_unreadiness",
+      "mode": "apriori",
+      "target_type": "Procedure",
+      "target_id": "https://example.org/masynreas/datasets/baseA/procedure_restart_customer_portal",
+      "activation_status": "triggered",
+      "reliability_score": 25,
+      "severity_score": 13,
+      "priority_score": 20,
+      "evidence": [
+        {
+          "level1_agent": "procedure_not_linked_to_resource_type_detector",
+          "role": "primary",
+          "matched_anchor": "https://example.org/masynreas/datasets/baseA/procedure_restart_customer_portal",
+          "record_count": 1,
+          "family": "procedural",
+          "result_file": "results/procedural/apriori/procedure_not_linked_to_resource_type_results.json"
+        }
+      ],
+      "severity_factors": {
+        "criticality": 0,
+        "breadth": 0,
+        "concentration": 0,
+        "temporal_aggravation": 0,
+        "governance_weakness": 5,
+        "family_base_bonus": 8
+      },
+      "criticalities": [],
+      "explanation": "Procedural unreadiness is diagnosed for Procedure 'procedure_restart_customer_portal' because procedures are not linked to resource types converge on the same anchor. The evidence spans procedural signal family/families.",
+      "recommended_action": "Clarify operational procedures, scheduling, and ticket-to-procedure links for this anchor before incident pressure appears."
+    },
+    {
+      "diagnosis_id": "L2-A4-003",
+      "diagnosis_type": "procedural_unreadiness",
+      "mode": "apriori",
+      "target_type": "Procedure",
+      "target_id": "https://example.org/masynreas/datasets/baseA/procedure_restart_monitoring_agent",
+      "activation_status": "triggered",
+      "reliability_score": 25,
+      "severity_score": 13,
+      "priority_score": 20,
+      "evidence": [
+        {
+          "level1_agent": "procedure_not_linked_to_resource_type_detector",
+          "role": "primary",
+          "matched_anchor": "https://example.org/masynreas/datasets/baseA/procedure_restart_monitoring_agent",
+          "record_count": 1,
+          "family": "procedural",
+          "result_file": "results/procedural/apriori/procedure_not_linked_to_resource_type_results.json"
+        }
+      ],
+      "severity_factors": {
+        "criticality": 0,
+        "breadth": 0,
+        "concentration": 0,
+        "temporal_aggravation": 0,
+        "governance_weakness": 5,
+        "family_base_bonus": 8
+      },
+      "criticalities": [],
+      "explanation": "Procedural unreadiness is diagnosed for Procedure 'procedure_restart_monitoring_agent' because procedures are not linked to resource types converge on the same anchor. The evidence spans procedural signal family/families.",
+      "recommended_action": "Clarify operational procedures, scheduling, and ticket-to-procedure links for this anchor before incident pressure appears."
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "dataset_id": "DS10_apriori_mixed_two_true_diagnoses",
+  "mode": "apriori",
+  "conventions": "P=1 if TP+FP=0; R=1 if TP+FN=0; F1=0 if P+R=0. L2 ranking = triggered diagnosers sorted by max priority_score (tie: reliability, name). L1 = detectors with a non-empty JSON.",
+  "level1": {
+    "expected_nonempty": [
+      "functional/application_without_module_detector",
+      "functional/over_concentrated_service_detector",
+      "functional/service_without_application_detector",
+      "functional/service_without_resource_coverage_detector",
+      "structural/criticality_structural_weakness_detector",
+      "structural/missing_redundancy_detector"
+    ],
+    "actual_nonempty": [
+      "functional/application_without_module_detector",
+      "functional/over_concentrated_service_detector",
+      "functional/service_without_application_detector",
+      "functional/service_without_resource_coverage_detector",
+      "procedural/procedure_not_linked_to_resource_type_detector",
+      "structural/criticality_structural_weakness_detector",
+      "structural/missing_redundancy_detector"
+    ],
+    "hit": [
+      "functional/application_without_module_detector",
+      "functional/over_concentrated_service_detector",
+      "functional/service_without_application_detector",
+      "functional/service_without_resource_coverage_detector",
+      "structural/criticality_structural_weakness_detector",
+      "structural/missing_redundancy_detector"
+    ],
+    "missed": [],
+    "extra": [
+      "procedural/procedure_not_linked_to_resource_type_detector"
+    ],
+    "tp": 6,
+    "fp": 1,
+    "fn": 0,
+    "precision": 0.857,
+    "recall": 1.0,
+    "f1": 0.923,
+    "bindings_per_detector": {
+      "dynamic/change_without_effective_time_detector": 0,
+      "dynamic/event_without_related_element_detector": 0,
+      "dynamic/event_without_timestamp_detector": 0,
+      "functional/application_without_module_detector": 1,
+      "functional/application_without_resource_detector": 0,
+      "functional/duplicated_functional_mapping_detector": 0,
+      "functional/inconsistent_service_hierarchy_detector": 0,
+      "functional/over_concentrated_service_detector": 1,
+      "functional/service_without_application_detector": 1,
+      "functional/service_without_resource_coverage_detector": 1,
+      "procedural/change_request_without_scheduled_time_detector": 0,
+      "procedural/procedure_not_linked_to_resource_type_detector": 2,
+      "procedural/ticket_without_assigned_procedure_detector": 0,
+      "structural/application_without_support_detector": 0,
+      "structural/criticality_structural_weakness_detector": 1,
+      "structural/incomplete_network_link_detector": 0,
+      "structural/missing_interface_detector": 0,
+      "structural/missing_parent_resource_detector": 0,
+      "structural/missing_redundancy_detector": 1,
+      "structural/orphan_interface_detector": 0,
+      "structural/orphan_resource_detector": 0,
+      "structural/unconnected_interface_detector": 0,
+      "structural/unmanaged_resource_detector": 0
+    }
+  },
+  "level2": {
+    "expected": [
+      "critical_service_exposure_diagnoser",
+      "functional_mapping_gap_diagnoser"
+    ],
+    "triggered": [
+      "functional_mapping_gap_diagnoser",
+      "procedural_unreadiness_diagnoser",
+      "structural_fragility_diagnoser"
+    ],
+    "detail": {
+      "critical_service_exposure_diagnoser": "FN",
+      "functional_mapping_gap_diagnoser": "TP",
+      "observability_gap_diagnoser": "TN",
+      "procedural_unreadiness_diagnoser": "FP",
+      "structural_fragility_diagnoser": "FP"
+    },
+    "tp": 1,
+    "fp": 2,
+    "fn": 1,
+    "precision": 0.333,
+    "recall": 0.5,
+    "f1": 0.4,
+    "ranking_by_priority": [
+      {
+        "rank": 1,
+        "diagnoser": "structural_fragility_diagnoser",
+        "priority_score": 46,
+        "anchor": "https://example.org/masynreas/datasets/baseA/app_customer_portal",
+        "expected": false
+      },
+      {
+        "rank": 2,
+        "diagnoser": "functional_mapping_gap_diagnoser",
+        "priority_score": 41,
+        "anchor": "https://example.org/masynreas/datasets/baseA/service_network_monitoring",
+        "expected": true
+      },
+      {
+        "rank": 3,
+        "diagnoser": "procedural_unreadiness_diagnoser",
+        "priority_score": 20,
+        "anchor": "https://example.org/masynreas/datasets/baseA/procedure_restart_customer_portal",
+        "expected": false
+      }
+    ],
+    "rank_of_expected": {
+      "critical_service_exposure_diagnoser": null,
+      "functional_mapping_gap_diagnoser": 2
+    },
+    "top1": "structural_fragility_diagnoser",
+    "top1_in_expected": false,
+    "reciprocal_rank": 0.5,
+    "manifest_ranking_expectation": null,
+    "top1_matches_manifest_order": null
+  }
+}

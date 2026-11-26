@@ -75,3 +75,9 @@ This scenario provides a documented mutation of a healthy reference graph so tha
 - The companion JSON files are the authoritative machine-readable reference for automated evaluation scripts.
 - This README is intentionally written for human inspection and benchmark orientation.
 - The file is stored as UTF-8 without BOM to avoid the encoding artefacts seen in earlier generated documentation.
+
+## Dataset Correction (2026-11-26)
+
+- `dataset.ttl`: a block ended with `;` instead of `.` before the next subject (line 386). The `;` was replaced by `.`; no triple was added or removed by hand.
+- Virtuoso 7.x (Docker) rejected the previous file (`SP029` Turtle syntax error).
+- Reference triple count: **253** (field `triples` in `manifest.json`). The 2026-04-24 evaluation (`eval_results.json`) loaded only 238 triples, so its results for this dataset were computed on a truncated graph and are not comparable.

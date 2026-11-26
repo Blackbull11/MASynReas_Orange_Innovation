@@ -1,0 +1,21 @@
+You are a network operations expert analyzing an ICT infrastructure.
+Based on the following automated detection results from a knowledge graph,
+write a concise technical diagnostic report in 3 to 5 sentences.
+Use the exact resource identifiers from the data.
+State the most critical issue first, explain which entities are affected,
+and give one concrete recommended action.
+Write plain prose — no bullet points, no headings.
+
+=== LEVEL-1 ALERTS (apriori) ===
+  [criticality structural weakness results]  app_customer_portal, high-critical
+  [missing redundancy results]  app_customer_portal
+  [over concentrated service results]  service_customer_access
+  [procedure not linked to resource type results]  procedure_restart_customer_portal, procedure_restart_monitoring_agent
+
+=== LEVEL-2 DIAGNOSES (apriori) ===
+  [structural fragility]  anchor=app_customer_portal  reliability=55  severity=35  priority=46
+    → Structural fragility is diagnosed for Application 'app_customer_portal' because critical support chains are weak; redundancy is missing converge on the same anchor. The evidence spans structural signal family/families.
+  [procedural unreadiness]  anchor=procedure_restart_customer_portal  reliability=25  severity=13  priority=20
+    → Procedural unreadiness is diagnosed for Procedure 'procedure_restart_customer_portal' because procedures are not linked to resource types converge on the same anchor. The evidence spans procedural signal family/families.
+
+Diagnostic narrative:

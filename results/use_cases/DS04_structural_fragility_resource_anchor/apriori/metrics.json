@@ -1,0 +1,106 @@
+{
+  "dataset_id": "DS04_structural_fragility_resource_anchor",
+  "mode": "apriori",
+  "conventions": "P=1 if TP+FP=0; R=1 if TP+FN=0; F1=0 if P+R=0. L2 ranking = triggered diagnosers sorted by max priority_score (tie: reliability, name). L1 = detectors with a non-empty JSON.",
+  "level1": {
+    "expected_nonempty": [
+      "structural/missing_interface_detector",
+      "structural/missing_parent_resource_detector",
+      "structural/unmanaged_resource_detector"
+    ],
+    "actual_nonempty": [
+      "procedural/procedure_not_linked_to_resource_type_detector",
+      "structural/missing_interface_detector",
+      "structural/missing_parent_resource_detector",
+      "structural/orphan_resource_detector",
+      "structural/unmanaged_resource_detector"
+    ],
+    "hit": [
+      "structural/missing_interface_detector",
+      "structural/missing_parent_resource_detector",
+      "structural/unmanaged_resource_detector"
+    ],
+    "missed": [],
+    "extra": [
+      "procedural/procedure_not_linked_to_resource_type_detector",
+      "structural/orphan_resource_detector"
+    ],
+    "tp": 3,
+    "fp": 2,
+    "fn": 0,
+    "precision": 0.6,
+    "recall": 1.0,
+    "f1": 0.75,
+    "bindings_per_detector": {
+      "dynamic/change_without_effective_time_detector": 0,
+      "dynamic/event_without_related_element_detector": 0,
+      "dynamic/event_without_timestamp_detector": 0,
+      "functional/application_without_module_detector": 0,
+      "functional/application_without_resource_detector": 0,
+      "functional/duplicated_functional_mapping_detector": 0,
+      "functional/inconsistent_service_hierarchy_detector": 0,
+      "functional/over_concentrated_service_detector": 0,
+      "functional/service_without_application_detector": 0,
+      "functional/service_without_resource_coverage_detector": 0,
+      "procedural/change_request_without_scheduled_time_detector": 0,
+      "procedural/procedure_not_linked_to_resource_type_detector": 2,
+      "procedural/ticket_without_assigned_procedure_detector": 0,
+      "structural/application_without_support_detector": 0,
+      "structural/criticality_structural_weakness_detector": 0,
+      "structural/incomplete_network_link_detector": 0,
+      "structural/missing_interface_detector": 1,
+      "structural/missing_parent_resource_detector": 1,
+      "structural/missing_redundancy_detector": 0,
+      "structural/orphan_interface_detector": 0,
+      "structural/orphan_resource_detector": 1,
+      "structural/unconnected_interface_detector": 0,
+      "structural/unmanaged_resource_detector": 1
+    }
+  },
+  "level2": {
+    "expected": [
+      "structural_fragility_diagnoser"
+    ],
+    "triggered": [
+      "procedural_unreadiness_diagnoser",
+      "structural_fragility_diagnoser"
+    ],
+    "detail": {
+      "critical_service_exposure_diagnoser": "TN",
+      "functional_mapping_gap_diagnoser": "TN",
+      "observability_gap_diagnoser": "TN",
+      "procedural_unreadiness_diagnoser": "FP",
+      "structural_fragility_diagnoser": "TP"
+    },
+    "tp": 1,
+    "fp": 1,
+    "fn": 0,
+    "precision": 0.5,
+    "recall": 1.0,
+    "f1": 0.667,
+    "ranking_by_priority": [
+      {
+        "rank": 1,
+        "diagnoser": "structural_fragility_diagnoser",
+        "priority_score": 53,
+        "anchor": "https://example.org/masynreas/datasets/baseA/res_access_switch_02",
+        "expected": true
+      },
+      {
+        "rank": 2,
+        "diagnoser": "procedural_unreadiness_diagnoser",
+        "priority_score": 20,
+        "anchor": "https://example.org/masynreas/datasets/baseA/procedure_restart_customer_portal",
+        "expected": false
+      }
+    ],
+    "rank_of_expected": {
+      "structural_fragility_diagnoser": 1
+    },
+    "top1": "structural_fragility_diagnoser",
+    "top1_in_expected": true,
+    "reciprocal_rank": 1.0,
+    "manifest_ranking_expectation": null,
+    "top1_matches_manifest_order": null
+  }
+}

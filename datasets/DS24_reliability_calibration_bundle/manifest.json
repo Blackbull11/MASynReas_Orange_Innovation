@@ -53,5 +53,7 @@
                                 "apriori/structural_fragility_diagnoser",
                                 "apriori/critical_service_exposure_diagnoser",
                                 "apriori/observability_gap_diagnoser"
-                            ]
+                            ],
+    "triples":  253,
+    "dataset_correction":  "2026-11-26: orphan ';' replaced by '.' at end of block (line 386) in dataset.ttl. The previous file was rejected by Virtuoso 7.x Docker (SP029); the 2026-04-24 load gave 238 triples, the corrected file loads 253."
 }

@@ -1,0 +1,14 @@
+[
+  {
+    "ticket": {
+      "type": "uri",
+      "value": "https://example.org/masynreas/datasets/baseB/ticket_customer_warning"
+    }
+  },
+  {
+    "ticket": {
+      "type": "uri",
+      "value": "https://example.org/masynreas/datasets/baseB/ticket_workforce_warning"
+    }
+  }
+]

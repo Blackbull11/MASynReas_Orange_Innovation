@@ -1,0 +1,34 @@
+[
+  {
+    "change": {
+      "type": "uri",
+      "value": "https://example.org/masynreas/datasets/baseA/change_monitoring_patch"
+    },
+    "hasActualStartTime": {
+      "type": "typed-literal",
+      "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+      "value": "1"
+    },
+    "hasActualEndTime": {
+      "type": "typed-literal",
+      "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+      "value": "0"
+    }
+  },
+  {
+    "change": {
+      "type": "uri",
+      "value": "https://example.org/masynreas/datasets/baseA/change_switch_firmware_window"
+    },
+    "hasActualStartTime": {
+      "type": "typed-literal",
+      "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+      "value": "1"
+    },
+    "hasActualEndTime": {
+      "type": "typed-literal",
+      "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+      "value": "0"
+    }
+  }
+]

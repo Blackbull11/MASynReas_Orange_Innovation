@@ -1,0 +1,36 @@
+[
+  {
+    "change1": {
+      "type": "uri",
+      "value": "https://example.org/masynreas/datasets/baseB/change_customer_hotfix"
+    },
+    "change2": {
+      "type": "uri",
+      "value": "https://example.org/masynreas/datasets/baseB/change_customer_release"
+    },
+    "relatedElement": {
+      "type": "uri",
+      "value": "https://example.org/masynreas/datasets/baseB/app_customer_portal"
+    },
+    "start1": {
+      "type": "typed-literal",
+      "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+      "value": "2026-02-06T09:20:00Z"
+    },
+    "end1": {
+      "type": "typed-literal",
+      "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+      "value": "2026-02-06T09:50:00Z"
+    },
+    "start2": {
+      "type": "typed-literal",
+      "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+      "value": "2026-02-06T09:10:00Z"
+    },
+    "end2": {
+      "type": "typed-literal",
+      "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+      "value": "2026-02-06T09:35:00Z"
+    }
+  }
+]

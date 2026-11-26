@@ -1,0 +1,8 @@
+[
+  {
+    "event": {
+      "type": "uri",
+      "value": "https://example.org/masynreas/datasets/baseA/event_obs_missing_timestamp"
+    }
+  }
+]

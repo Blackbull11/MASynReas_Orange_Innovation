@@ -1,0 +1,26 @@
+You are a network operations expert analyzing an ICT infrastructure.
+Based on the following automated detection results from a knowledge graph,
+write a concise technical diagnostic report in 3 to 5 sentences.
+Use the exact resource identifiers from the data.
+State the most critical issue first, explain which entities are affected,
+and give one concrete recommended action.
+Write plain prose — no bullet points, no headings.
+
+=== LEVEL-1 ALERTS (aposteriori) ===
+  [cascading service failure results]  event_monitoring_warning, res_monitor_vm_01, app_monitoring_dashboard, module_monitoring_dashboard, service_network_monitoring, service_workforce_portal
+  [hidden service dependency results]  event_monitoring_warning, res_monitor_vm_01, app_monitoring_dashboard, module_monitoring_dashboard, service_network_monitoring, service_workforce_portal
+  [incident without ticket results]  event_monitor_down, severity_high, res_monitor_vm_01, event_monitor_timeout, severity_minor, event_monitor_timeout_repeat
+  [isolated incident resource results]  ticket_billing_warning, res_billing_api_01, ticket_customer_warning, res_customer_vm_01, ticket_monitoring_warning, res_monitor_vm_01
+  [module level incident aggregation results]  app_monitoring_dashboard, module_monitoring_dashboard
+  [service impacted by multiple resources results]  service_workforce_portal
+  [service with repeated incident results]  service_workforce_portal, service_network_monitoring
+  [spatial incident cluster results]  room_dc1
+  [ticket without linked event results]  ticket_monitor_active_new, ticket_monitor_resolved_old
+
+=== LEVEL-2 DIAGNOSES (aposteriori) ===
+  [service cascade]  anchor=service_workforce_portal  reliability=95  severity=51  priority=75
+    → Service cascade is diagnosed for Service 'service_workforce_portal' because shared support chains affect several services; hidden service dependencies concentrate impact; one service is impacted by several resources; the same service suffers repeated incidents converge on the same anchor. The evidence spans functional signal family/families.
+  [traceability breakdown]  anchor=operational_process  reliability=55  severity=35  priority=46
+    → Traceability breakdown is diagnosed because several operational links are missing at once: incident-to-ticket creation, ticket-to-event linkage, or service escalation tracking.
+
+Diagnostic narrative:

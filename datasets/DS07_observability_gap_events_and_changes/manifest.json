@@ -38,5 +38,7 @@
                              "nonzero_level2_diagnosers":  "apriori/observability_gap_diagnoser",
                              "level1_total_bindings":  4,
                              "level2_total_diagnoses":  1
-                         }
+                         },
+    "triples":  181,
+    "dataset_correction":  "2026-11-26: orphan ';' replaced by '.' at end of block (lines 256 and 264) in dataset.ttl. The previous file was rejected by Virtuoso 7.x Docker (SP029); the 2026-04-24 load gave 162 triples, the corrected file loads 181."
 }

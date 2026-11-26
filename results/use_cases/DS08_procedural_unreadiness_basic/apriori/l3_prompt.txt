@@ -1,0 +1,18 @@
+You are a network operations expert analyzing an ICT infrastructure.
+Based on the following automated detection results from a knowledge graph,
+write a concise technical diagnostic report in 3 to 5 sentences.
+Use the exact resource identifiers from the data.
+State the most critical issue first, explain which entities are affected,
+and give one concrete recommended action.
+Write plain prose — no bullet points, no headings.
+
+=== LEVEL-1 ALERTS (apriori) ===
+  [change request without scheduled time results]  change_switch_firmware_window
+  [procedure not linked to resource type results]  procedure_restart_customer_portal, procedure_restart_monitoring_agent
+  [ticket without assigned procedure results]  ticket_procedural_gap, priority_normal, severity_minor
+
+=== LEVEL-2 DIAGNOSES (apriori) ===
+  [procedural unreadiness]  anchor=ticket_procedural_gap  reliability=35  severity=23  priority=30
+    → Procedural unreadiness is diagnosed for TroubleTicket 'ticket_procedural_gap' because tickets have no assigned procedure converge on the same anchor. The evidence spans procedural signal family/families.
+
+Diagnostic narrative:

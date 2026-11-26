@@ -1,0 +1,21 @@
+You are a network operations expert analyzing an ICT infrastructure.
+Based on the following automated detection results from a knowledge graph,
+write a concise technical diagnostic report in 3 to 5 sentences.
+Use the exact resource identifiers from the data.
+State the most critical issue first, explain which entities are affected,
+and give one concrete recommended action.
+Write plain prose — no bullet points, no headings.
+
+=== LEVEL-1 ALERTS (apriori) ===
+  [application without module results]  app_customer_portal
+  [procedure not linked to resource type results]  procedure_restart_customer_portal, procedure_restart_monitoring_agent
+  [service without application results]  service_customer_access
+  [service without resource coverage results]  service_customer_access
+
+=== LEVEL-2 DIAGNOSES (apriori) ===
+  [functional mapping gap]  anchor=service_customer_access  reliability=55  severity=24  priority=41
+    → Functional mapping gap is diagnosed for Service 'service_customer_access' because services lack mapped applications; services lack resource coverage converge on the same anchor. The evidence spans functional signal family/families.
+  [procedural unreadiness]  anchor=procedure_restart_customer_portal  reliability=25  severity=13  priority=20
+    → Procedural unreadiness is diagnosed for Procedure 'procedure_restart_customer_portal' because procedures are not linked to resource types converge on the same anchor. The evidence spans procedural signal family/families.
+
+Diagnostic narrative:

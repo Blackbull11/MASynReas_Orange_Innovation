@@ -1,0 +1,64 @@
+[
+  {
+    "event": {
+      "type": "uri",
+      "value": "https://example.org/masynreas/datasets/baseB/event_monitoring_warning"
+    },
+    "time": {
+      "type": "typed-literal",
+      "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+      "value": "2026-02-15T09:20:00Z"
+    },
+    "resource": {
+      "type": "uri",
+      "value": "https://example.org/masynreas/datasets/baseB/res_monitor_vm_01"
+    },
+    "application": {
+      "type": "uri",
+      "value": "https://example.org/masynreas/datasets/baseB/app_monitoring_dashboard"
+    },
+    "module": {
+      "type": "uri",
+      "value": "https://example.org/masynreas/datasets/baseB/module_monitoring_dashboard"
+    },
+    "service1": {
+      "type": "uri",
+      "value": "https://example.org/masynreas/datasets/baseB/service_network_monitoring"
+    },
+    "service2": {
+      "type": "uri",
+      "value": "https://example.org/masynreas/datasets/baseB/service_workforce_portal"
+    }
+  },
+  {
+    "event": {
+      "type": "uri",
+      "value": "https://example.org/masynreas/datasets/baseB/event_monitoring_warning"
+    },
+    "time": {
+      "type": "typed-literal",
+      "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+      "value": "2026-02-15T09:20:00Z"
+    },
+    "resource": {
+      "type": "uri",
+      "value": "https://example.org/masynreas/datasets/baseB/res_monitor_vm_01"
+    },
+    "application": {
+      "type": "uri",
+      "value": "https://example.org/masynreas/datasets/baseB/app_monitoring_dashboard"
+    },
+    "module": {
+      "type": "uri",
+      "value": "https://example.org/masynreas/datasets/baseB/module_monitoring_dashboard"
+    },
+    "service1": {
+      "type": "uri",
+      "value": "https://example.org/masynreas/datasets/baseB/service_workforce_portal"
+    },
+    "service2": {
+      "type": "uri",
+      "value": "https://example.org/masynreas/datasets/baseB/service_network_monitoring"
+    }
+  }
+]

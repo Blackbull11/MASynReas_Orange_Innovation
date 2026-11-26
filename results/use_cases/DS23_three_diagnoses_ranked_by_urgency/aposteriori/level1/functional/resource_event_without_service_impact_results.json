@@ -1,0 +1,17 @@
+[
+  {
+    "event": {
+      "type": "uri",
+      "value": "https://example.org/masynreas/datasets/baseB/event_firewall_major"
+    },
+    "time": {
+      "type": "typed-literal",
+      "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+      "value": "2026-02-11T09:00:00Z"
+    },
+    "resource": {
+      "type": "uri",
+      "value": "https://example.org/masynreas/datasets/baseB/res_firewall_01"
+    }
+  }
+]

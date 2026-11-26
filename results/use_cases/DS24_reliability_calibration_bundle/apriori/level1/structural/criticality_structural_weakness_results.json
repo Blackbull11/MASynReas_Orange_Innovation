@@ -1,0 +1,17 @@
+[
+  {
+    "application": {
+      "type": "uri",
+      "value": "https://example.org/masynreas/datasets/baseB/app_customer_portal"
+    },
+    "criticality": {
+      "type": "uri",
+      "value": "https://w3id.org/noria/kos/application/criticality/high-critical"
+    },
+    "supportCount": {
+      "type": "typed-literal",
+      "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+      "value": "1"
+    }
+  }
+]

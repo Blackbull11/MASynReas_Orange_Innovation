@@ -1,0 +1,40 @@
+[
+  {
+    "event": {
+      "type": "uri",
+      "value": "https://example.org/masynreas/datasets/baseB/event_customer_warning"
+    },
+    "severity": {
+      "type": "uri",
+      "value": "https://example.org/masynreas/datasets/baseB/severity_minor"
+    },
+    "time": {
+      "type": "typed-literal",
+      "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+      "value": "2026-02-10T10:00:00Z"
+    },
+    "relatedElement": {
+      "type": "uri",
+      "value": "https://example.org/masynreas/datasets/baseB/res_customer_vm_01"
+    }
+  },
+  {
+    "event": {
+      "type": "uri",
+      "value": "https://example.org/masynreas/datasets/baseB/event_workforce_warning"
+    },
+    "severity": {
+      "type": "uri",
+      "value": "https://example.org/masynreas/datasets/baseB/severity_minor"
+    },
+    "time": {
+      "type": "typed-literal",
+      "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+      "value": "2026-02-18T15:10:00Z"
+    },
+    "relatedElement": {
+      "type": "uri",
+      "value": "https://example.org/masynreas/datasets/baseB/res_workforce_vm_01"
+    }
+  }
+]

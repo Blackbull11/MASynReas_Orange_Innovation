@@ -1,0 +1,27 @@
+You are a network operations expert analyzing an ICT infrastructure.
+Based on the following automated detection results from a knowledge graph,
+write a concise technical diagnostic report in 3 to 5 sentences.
+Use the exact resource identifiers from the data.
+State the most critical issue first, explain which entities are affected,
+and give one concrete recommended action.
+Write plain prose — no bullet points, no headings.
+
+=== LEVEL-1 ALERTS (aposteriori) ===
+  [high impact resource results]  ticket_firewall_major, res_firewall_01
+  [incident on incomplete link results]  ticket_firewall_major, res_firewall_01, if_firewall_01_port_01, link_monitor_vm_01_to_firewall_01
+  [incident without ticket results]  event_billing_warning, severity_minor, res_billing_api_01, event_monitor_down, severity_high, res_monitor_vm_01
+  [isolated incident resource results]  ticket_billing_warning, res_billing_api_01, ticket_customer_warning, res_customer_vm_01, ticket_firewall_major, res_firewall_01
+  [module level incident aggregation results]  app_monitoring_dashboard, module_monitoring_dashboard
+  [no redundancy incident results]  ticket_firewall_major, res_firewall_01, ticket_monitoring_warning, res_monitor_vm_01, ticket_workforce_warning, res_workforce_vm_01
+  [resource event without service impact results]  event_firewall_major, res_firewall_01
+  [service with repeated incident results]  service_network_monitoring
+  [spatial incident cluster results]  room_dc1
+  [ticket without linked event results]  ticket_billing_warning, ticket_monitor_active_new, ticket_monitor_resolved_old
+
+=== LEVEL-2 DIAGNOSES (aposteriori) ===
+  [single point of failure]  anchor=res_firewall_01  reliability=95  severity=42  priority=71
+    → Single point of failure is diagnosed for Resource 'res_firewall_01' because incident resources have broad downstream impact; incident resources sit on incomplete links; incident resources appear isolated; incident resources have no visible redundancy converge on the same anchor. The evidence spans structural signal family/families.
+  [traceability breakdown]  anchor=operational_process  reliability=55  severity=35  priority=46
+    → Traceability breakdown is diagnosed because several operational links are missing at once: incident-to-ticket creation, ticket-to-event linkage, or service escalation tracking.
+
+Diagnostic narrative:

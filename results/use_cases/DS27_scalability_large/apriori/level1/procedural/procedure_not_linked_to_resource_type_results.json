@@ -1,0 +1,26 @@
+[
+  {
+    "procedure": {
+      "type": "uri",
+      "value": "https://example.org/masynreas/datasets/baseB/procedure_clear_billing_queue"
+    }
+  },
+  {
+    "procedure": {
+      "type": "uri",
+      "value": "https://example.org/masynreas/datasets/baseB/procedure_restart_customer_portal"
+    }
+  },
+  {
+    "procedure": {
+      "type": "uri",
+      "value": "https://example.org/masynreas/datasets/baseB/procedure_restart_monitoring_agent"
+    }
+  },
+  {
+    "procedure": {
+      "type": "uri",
+      "value": "https://example.org/masynreas/datasets/baseB/procedure_restart_workforce_api"
+    }
+  }
+]

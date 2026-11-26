@@ -1,0 +1,353 @@
+{
+  "dataset_id": "DS03_partial_evidence_no_l2_v2",
+  "mode": "apriori",
+  "started_at": "2026-11-25T19:19:22+01:00",
+  "git_head": "a70869216dc674a82930034c19ababd4b814f4a8",
+  "git_branch": "use-cases-27",
+  "git_dirty_files": 36,
+  "agents_py_identical_to_origin_paul": true,
+  "origin_paul": "4738a689594e08c43cef9bc96ab050a932bf200d",
+  "sha256": {
+    "run_use_cases.py": "1a329a2d6829eeb46525ef49e581d5dc171cb3c916d028a22671294cdc2d78fc",
+    "diagnosis_llm.py": "9c0a18191d0735301b392618ee1451567a73f9234176aaeac75e3b6274892057"
+  },
+  "python": "C:\\Users\\paulc\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+  "sparql_url": "http://localhost:8890/sparql",
+  "virtuoso_container": "openlinkvirtuoso",
+  "status": "ok",
+  "durations_ms": {
+    "load": 82.5,
+    "l1": 14230.8,
+    "l2": 898.3,
+    "total_l1_l2": 15129.1,
+    "wall_total": 25134.0
+  },
+  "triples": {
+    "expected_eval_results": 176,
+    "loaded_dataset_graph": 176,
+    "user_graphs": {
+      "http://dataset/": 176
+    }
+  },
+  "level1": [
+    {
+      "script": "src/agt/dynamic/apriori/change_without_effective_time_detector.py",
+      "returncode": 0,
+      "timed_out": false,
+      "duration_ms": 887.5,
+      "outputs": [
+        "dynamic/apriori/change_without_effective_time_results.json"
+      ],
+      "status": "ok",
+      "archived_output": "level1/dynamic/change_without_effective_time_results.json"
+    },
+    {
+      "script": "src/agt/dynamic/apriori/event_without_related_element_detector.py",
+      "returncode": 0,
+      "timed_out": false,
+      "duration_ms": 596.0,
+      "outputs": [
+        "dynamic/apriori/event_without_related_element_results.json"
+      ],
+      "status": "ok",
+      "archived_output": "level1/dynamic/event_without_related_element_results.json"
+    },
+    {
+      "script": "src/agt/dynamic/apriori/event_without_timestamp_detector.py",
+      "returncode": 0,
+      "timed_out": false,
+      "duration_ms": 690.1,
+      "outputs": [
+        "dynamic/apriori/event_without_timestamp_results.json"
+      ],
+      "status": "ok",
+      "archived_output": "level1/dynamic/event_without_timestamp_results.json"
+    },
+    {
+      "script": "src/agt/functional/apriori/application_without_module_detector.py",
+      "returncode": 0,
+      "timed_out": false,
+      "duration_ms": 552.1,
+      "outputs": [
+        "functional/apriori/application_without_module_results.json"
+      ],
+      "status": "ok",
+      "archived_output": "level1/functional/application_without_module_results.json"
+    },
+    {
+      "script": "src/agt/functional/apriori/application_without_resource_detector.py",
+      "returncode": 0,
+      "timed_out": false,
+      "duration_ms": 534.2,
+      "outputs": [
+        "functional/apriori/application_without_resource_results.json"
+      ],
+      "status": "ok",
+      "archived_output": "level1/functional/application_without_resource_results.json"
+    },
+    {
+      "script": "src/agt/functional/apriori/duplicated_functional_mapping_detector.py",
+      "returncode": 0,
+      "timed_out": false,
+      "duration_ms": 508.8,
+      "outputs": [
+        "functional/apriori/duplicated_functional_mapping_results.json"
+      ],
+      "status": "ok",
+      "archived_output": "level1/functional/duplicated_functional_mapping_results.json"
+    },
+    {
+      "script": "src/agt/functional/apriori/inconsistent_service_hierarchy_detector.py",
+      "returncode": 0,
+      "timed_out": false,
+      "duration_ms": 449.8,
+      "outputs": [
+        "functional/apriori/inconsistent_service_hierarchy_results.json"
+      ],
+      "status": "ok",
+      "archived_output": "level1/functional/inconsistent_service_hierarchy_results.json"
+    },
+    {
+      "script": "src/agt/functional/apriori/over_concentrated_service_detector.py",
+      "returncode": 0,
+      "timed_out": false,
+      "duration_ms": 809.5,
+      "outputs": [
+        "functional/apriori/over_concentrated_service_results.json"
+      ],
+      "status": "ok",
+      "archived_output": "level1/functional/over_concentrated_service_results.json"
+    },
+    {
+      "script": "src/agt/functional/apriori/service_without_application_detector.py",
+      "returncode": 0,
+      "timed_out": false,
+      "duration_ms": 484.6,
+      "outputs": [
+        "functional/apriori/service_without_application_results.json"
+      ],
+      "status": "ok",
+      "archived_output": "level1/functional/service_without_application_results.json"
+    },
+    {
+      "script": "src/agt/functional/apriori/service_without_resource_coverage_detector.py",
+      "returncode": 0,
+      "timed_out": false,
+      "duration_ms": 571.1,
+      "outputs": [
+        "functional/apriori/service_without_resource_coverage_results.json"
+      ],
+      "status": "ok",
+      "archived_output": "level1/functional/service_without_resource_coverage_results.json"
+    },
+    {
+      "script": "src/agt/procedural/apriori/change_request_without_scheduled_time_detector.py",
+      "returncode": 0,
+      "timed_out": false,
+      "duration_ms": 514.3,
+      "outputs": [
+        "procedural/apriori/change_request_without_scheduled_time_results.json"
+      ],
+      "status": "ok",
+      "archived_output": "level1/procedural/change_request_without_scheduled_time_results.json"
+    },
+    {
+      "script": "src/agt/procedural/apriori/procedure_not_linked_to_resource_type_detector.py",
+      "returncode": 0,
+      "timed_out": false,
+      "duration_ms": 429.2,
+      "outputs": [
+        "procedural/apriori/procedure_not_linked_to_resource_type_results.json"
+      ],
+      "status": "ok",
+      "archived_output": "level1/procedural/procedure_not_linked_to_resource_type_results.json"
+    },
+    {
+      "script": "src/agt/procedural/apriori/ticket_without_assigned_procedure_detector.py",
+      "returncode": 0,
+      "timed_out": false,
+      "duration_ms": 819.4,
+      "outputs": [
+        "procedural/apriori/ticket_without_assigned_procedure_results.json"
+      ],
+      "status": "ok",
+      "archived_output": "level1/procedural/ticket_without_assigned_procedure_results.json"
+    },
+    {
+      "script": "src/agt/structural/apriori/application_without_support_detector.py",
+      "returncode": 0,
+      "timed_out": false,
+      "duration_ms": 807.6,
+      "outputs": [
+        "structural/apriori/application_without_support_results.json"
+      ],
+      "status": "ok",
+      "archived_output": "level1/structural/application_without_support_results.json"
+    },
+    {
+      "script": "src/agt/structural/apriori/criticality_structural_weakness_detector.py",
+      "returncode": 0,
+      "timed_out": false,
+      "duration_ms": 523.7,
+      "outputs": [
+        "structural/apriori/criticality_structural_weakness_results.json"
+      ],
+      "status": "ok",
+      "archived_output": "level1/structural/criticality_structural_weakness_results.json"
+    },
+    {
+      "script": "src/agt/structural/apriori/incomplete_network_link_detector.py",
+      "returncode": 0,
+      "timed_out": false,
+      "duration_ms": 721.5,
+      "outputs": [
+        "structural/apriori/incomplete_network_link_results.json"
+      ],
+      "status": "ok",
+      "archived_output": "level1/structural/incomplete_network_link_results.json"
+    },
+    {
+      "script": "src/agt/structural/apriori/missing_interface_detector.py",
+      "returncode": 0,
+      "timed_out": false,
+      "duration_ms": 685.0,
+      "outputs": [
+        "structural/apriori/missing_interface_results.json"
+      ],
+      "status": "ok",
+      "archived_output": "level1/structural/missing_interface_results.json"
+    },
+    {
+      "script": "src/agt/structural/apriori/missing_parent_resource_detector.py",
+      "returncode": 0,
+      "timed_out": false,
+      "duration_ms": 782.9,
+      "outputs": [
+        "structural/apriori/missing_parent_resource_results.json"
+      ],
+      "status": "ok",
+      "archived_output": "level1/structural/missing_parent_resource_results.json"
+    },
+    {
+      "script": "src/agt/structural/apriori/missing_redundancy_detector.py",
+      "returncode": 0,
+      "timed_out": false,
+      "duration_ms": 839.8,
+      "outputs": [
+        "structural/apriori/missing_redundancy_results.json"
+      ],
+      "status": "ok",
+      "archived_output": "level1/structural/missing_redundancy_results.json"
+    },
+    {
+      "script": "src/agt/structural/apriori/orphan_interface_detector.py",
+      "returncode": 0,
+      "timed_out": false,
+      "duration_ms": 484.7,
+      "outputs": [
+        "structural/apriori/orphan_interface_results.json"
+      ],
+      "status": "ok",
+      "archived_output": "level1/structural/orphan_interface_results.json"
+    },
+    {
+      "script": "src/agt/structural/apriori/orphan_resource_detector.py",
+      "returncode": 0,
+      "timed_out": false,
+      "duration_ms": 445.2,
+      "outputs": [
+        "structural/apriori/orphan_resource_results.json"
+      ],
+      "status": "ok",
+      "archived_output": "level1/structural/orphan_resource_results.json"
+    },
+    {
+      "script": "src/agt/structural/apriori/unconnected_interface_detector.py",
+      "returncode": 0,
+      "timed_out": false,
+      "duration_ms": 416.5,
+      "outputs": [
+        "structural/apriori/unconnected_interface_results.json"
+      ],
+      "status": "ok",
+      "archived_output": "level1/structural/unconnected_interface_results.json"
+    },
+    {
+      "script": "src/agt/structural/apriori/unmanaged_resource_detector.py",
+      "returncode": 0,
+      "timed_out": false,
+      "duration_ms": 553.4,
+      "outputs": [
+        "structural/apriori/unmanaged_resource_results.json"
+      ],
+      "status": "ok",
+      "archived_output": "level1/structural/unmanaged_resource_results.json"
+    }
+  ],
+  "level2": [
+    {
+      "script": "src/agt/level2/apriori/critical_service_exposure_diagnoser.py",
+      "returncode": 0,
+      "timed_out": false,
+      "duration_ms": 146.3,
+      "outputs": [
+        "level2/apriori/critical_service_exposure_diagnoser.json"
+      ],
+      "status": "ok",
+      "archived_output": "level2/critical_service_exposure_diagnoser.json"
+    },
+    {
+      "script": "src/agt/level2/apriori/functional_mapping_gap_diagnoser.py",
+      "returncode": 0,
+      "timed_out": false,
+      "duration_ms": 209.8,
+      "outputs": [
+        "level2/apriori/functional_mapping_gap_diagnoser.json"
+      ],
+      "status": "ok",
+      "archived_output": "level2/functional_mapping_gap_diagnoser.json"
+    },
+    {
+      "script": "src/agt/level2/apriori/observability_gap_diagnoser.py",
+      "returncode": 0,
+      "timed_out": false,
+      "duration_ms": 164.8,
+      "outputs": [
+        "level2/apriori/observability_gap_diagnoser.json"
+      ],
+      "status": "ok",
+      "archived_output": "level2/observability_gap_diagnoser.json"
+    },
+    {
+      "script": "src/agt/level2/apriori/procedural_unreadiness_diagnoser.py",
+      "returncode": 0,
+      "timed_out": false,
+      "duration_ms": 165.4,
+      "outputs": [
+        "level2/apriori/procedural_unreadiness_diagnoser.json"
+      ],
+      "status": "ok",
+      "archived_output": "level2/procedural_unreadiness_diagnoser.json"
+    },
+    {
+      "script": "src/agt/level2/apriori/structural_fragility_diagnoser.py",
+      "returncode": 0,
+      "timed_out": false,
+      "duration_ms": 167.2,
+      "outputs": [
+        "level2/apriori/structural_fragility_diagnoser.json"
+      ],
+      "status": "ok",
+      "archived_output": "level2/structural_fragility_diagnoser.json"
+    }
+  ],
+  "l3": {
+    "status": "ok",
+    "model": "llama3.2:3b",
+    "returncode": 0,
+    "timed_out": false,
+    "duration_ms": 9730.9,
+    "prompt_saved": true
+  },
+  "finished_at": "2026-11-25T19:19:47+01:00"
+}

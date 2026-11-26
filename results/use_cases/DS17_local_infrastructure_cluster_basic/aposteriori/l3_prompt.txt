@@ -1,0 +1,18 @@
+You are a network operations expert analyzing an ICT infrastructure.
+Based on the following automated detection results from a knowledge graph,
+write a concise technical diagnostic report in 3 to 5 sentences.
+Use the exact resource identifiers from the data.
+State the most critical issue first, explain which entities are affected,
+and give one concrete recommended action.
+Write plain prose — no bullet points, no headings.
+
+=== LEVEL-1 ALERTS (aposteriori) ===
+  [isolated incident resource results]  ticket_billing_cluster, res_billing_api_01, ticket_billing_warning, ticket_customer_warning, res_customer_vm_01, ticket_monitoring_warning
+  [module level incident aggregation results]  app_billing_gateway, module_billing_gateway
+  [multi element synchronous incident results]  
+  [resource event without service impact results]  event_switch_cluster, res_access_switch_01
+  [service with repeated incident results]  service_billing_api
+  [spatial incident cluster results]  room_dc1
+  [stale incident results]  ticket_billing_cluster, res_billing_api_01, status_open
+
+Diagnostic narrative:

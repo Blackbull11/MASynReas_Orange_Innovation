@@ -253,7 +253,7 @@ baseA:change_switch_firmware_window
     noria:eventRelatedElement baseA:res_access_switch_01 ;
     noria:plannedStartDate "2026-01-05T08:00:00Z"^^xsd:dateTime ;
     noria:plannedEndDate "2026-01-05T08:30:00Z"^^xsd:dateTime ;
-    noria:changeRequestActualStartTime "2026-01-05T08:05:00Z"^^xsd:dateTime ;
+    noria:changeRequestActualStartTime "2026-01-05T08:05:00Z"^^xsd:dateTime .
 
 baseA:change_monitoring_patch
     a noria:ChangeRequest ;
@@ -261,7 +261,7 @@ baseA:change_monitoring_patch
     noria:eventRelatedElement baseA:app_monitoring_dashboard ;
     noria:plannedStartDate "2026-01-07T09:00:00Z"^^xsd:dateTime ;
     noria:plannedEndDate "2026-01-07T09:45:00Z"^^xsd:dateTime ;
-    noria:changeRequestActualStartTime "2026-01-07T09:05:00Z"^^xsd:dateTime ;
+    noria:changeRequestActualStartTime "2026-01-07T09:05:00Z"^^xsd:dateTime .
 
 baseA:event_obs_missing_timestamp
     a noria:EventRecord ;

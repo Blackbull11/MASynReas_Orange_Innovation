@@ -1,0 +1,1 @@
+(no prompt: no L1 alert and no L2 diagnosis — LLM not called)

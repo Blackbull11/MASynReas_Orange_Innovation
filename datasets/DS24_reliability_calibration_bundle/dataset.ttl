@@ -383,7 +383,7 @@ baseB:change_switch_maintenance
     noria:eventRelatedElement baseB:res_access_switch_01 ;
     noria:plannedStartDate "2026-02-01T07:00:00Z"^^xsd:dateTime ;
     noria:plannedEndDate "2026-02-01T07:45:00Z"^^xsd:dateTime ;
-    noria:changeRequestActualStartTime "2026-02-01T07:05:00Z"^^xsd:dateTime ;
+    noria:changeRequestActualStartTime "2026-02-01T07:05:00Z"^^xsd:dateTime .
 
 baseB:res_customer_vm_02
     a noria:Resource ;

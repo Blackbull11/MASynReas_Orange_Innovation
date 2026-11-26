@@ -237,19 +237,26 @@ public class PythonExecArtifact extends Artifact {
         return selectedMode != null ? selectedMode : "unknown";
     }
 
+    /**
+     * Clears the live results of the previous run. The per-use-case archive
+     * results/use_cases/ (written by run_use_cases.py) is preserved.
+     */
     private void clearResultsDirectory() {
         try {
             Path resultsDir = Paths.get("").toAbsolutePath().resolve("results").normalize();
+            Path archiveDir = resultsDir.resolve("use_cases");
             if (!Files.exists(resultsDir)) {
                 Files.createDirectories(resultsDir);
                 return;
             }
-            Files.walk(resultsDir)
-                    .sorted(Comparator.reverseOrder())
-                    .filter(path -> !path.equals(resultsDir))
-                    .forEach(this::deletePath);
+            try (Stream<Path> walk = Files.walk(resultsDir)) {
+                walk.sorted(Comparator.reverseOrder())
+                        .filter(path -> !path.equals(resultsDir))
+                        .filter(path -> !path.startsWith(archiveDir))
+                        .forEach(this::deletePath);
+            }
             Files.createDirectories(resultsDir);
-            log("[PythonExecArtifact] Cleared results directory: " + resultsDir);
+            log("[PythonExecArtifact] Cleared results directory (kept results/use_cases): " + resultsDir);
         } catch (Exception e) {
             failed("Could not clear results directory: " + e.getMessage());
         }

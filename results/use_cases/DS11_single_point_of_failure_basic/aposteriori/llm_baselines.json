@@ -1,0 +1,85 @@
+{
+  "note": "résultats GPU Mistral-7B du 24/04, non relancés",
+  "source": "llm_ablation_results.json (origin/paul)",
+  "model": "mistralai/Mistral-7B-Instruct-v0.3",
+  "entries": [
+    {
+      "dataset_id": "DS11_single_point_of_failure_basic",
+      "mode": "aposteriori",
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "expected": [
+        "single_point_of_failure_diagnoser"
+      ],
+      "mas_reference": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "predicted": [
+          "single_point_of_failure_diagnoser"
+        ],
+        "expected": [
+          "single_point_of_failure_diagnoser"
+        ]
+      },
+      "conditions": {
+        "A_graph_only": {
+          "metrics": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "predicted": [
+              "single_point_of_failure_diagnoser"
+            ],
+            "expected": [
+              "single_point_of_failure_diagnoser"
+            ]
+          },
+          "elapsed_s": 4.8,
+          "raw_response": "{\"triggered\": [\"single_point_of_failure_diagnoser\"], \"primary_entities\": {\"single_point_of_failure_diagnoser\": \"baseB:res_firewall_01\"}}"
+        },
+        "B_graph_plus_L1": {
+          "metrics": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "predicted": [
+              "single_point_of_failure_diagnoser"
+            ],
+            "expected": [
+              "single_point_of_failure_diagnoser"
+            ]
+          },
+          "elapsed_s": 4.7,
+          "raw_response": "{\"triggered\": [\"single_point_of_failure_diagnoser\"], \"primary_entities\": {\"single_point_of_failure_diagnoser\": \"res_firewall_01\"}}"
+        },
+        "C_graph_L1_L2": {
+          "metrics": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "predicted": [
+              "single_point_of_failure_diagnoser"
+            ],
+            "expected": [
+              "single_point_of_failure_diagnoser"
+            ]
+          },
+          "elapsed_s": 4.8,
+          "raw_response": "{\"triggered\": [\"single_point_of_failure_diagnoser\"], \"primary_entities\": {\"single_point_of_failure_diagnoser\": \"res_firewall_01\"}}"
+        }
+      }
+    }
+  ]
+}

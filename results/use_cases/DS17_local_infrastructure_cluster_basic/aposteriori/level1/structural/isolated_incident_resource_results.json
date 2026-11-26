@@ -1,0 +1,77 @@
+[
+  {
+    "ticket": {
+      "type": "uri",
+      "value": "https://example.org/masynreas/datasets/baseB/ticket_billing_cluster"
+    },
+    "resource": {
+      "type": "uri",
+      "value": "https://example.org/masynreas/datasets/baseB/res_billing_api_01"
+    },
+    "connectivityDegree": {
+      "type": "typed-literal",
+      "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+      "value": "1"
+    }
+  },
+  {
+    "ticket": {
+      "type": "uri",
+      "value": "https://example.org/masynreas/datasets/baseB/ticket_billing_warning"
+    },
+    "resource": {
+      "type": "uri",
+      "value": "https://example.org/masynreas/datasets/baseB/res_billing_api_01"
+    },
+    "connectivityDegree": {
+      "type": "typed-literal",
+      "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+      "value": "1"
+    }
+  },
+  {
+    "ticket": {
+      "type": "uri",
+      "value": "https://example.org/masynreas/datasets/baseB/ticket_customer_warning"
+    },
+    "resource": {
+      "type": "uri",
+      "value": "https://example.org/masynreas/datasets/baseB/res_customer_vm_01"
+    },
+    "connectivityDegree": {
+      "type": "typed-literal",
+      "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+      "value": "1"
+    }
+  },
+  {
+    "ticket": {
+      "type": "uri",
+      "value": "https://example.org/masynreas/datasets/baseB/ticket_monitoring_warning"
+    },
+    "resource": {
+      "type": "uri",
+      "value": "https://example.org/masynreas/datasets/baseB/res_monitor_vm_01"
+    },
+    "connectivityDegree": {
+      "type": "typed-literal",
+      "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+      "value": "1"
+    }
+  },
+  {
+    "ticket": {
+      "type": "uri",
+      "value": "https://example.org/masynreas/datasets/baseB/ticket_workforce_warning"
+    },
+    "resource": {
+      "type": "uri",
+      "value": "https://example.org/masynreas/datasets/baseB/res_workforce_vm_01"
+    },
+    "connectivityDegree": {
+      "type": "typed-literal",
+      "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+      "value": "1"
+    }
+  }
+]

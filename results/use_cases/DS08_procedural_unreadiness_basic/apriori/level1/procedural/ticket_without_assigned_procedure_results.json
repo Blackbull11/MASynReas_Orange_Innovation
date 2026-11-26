@@ -1,0 +1,16 @@
+[
+  {
+    "ticket": {
+      "type": "uri",
+      "value": "https://example.org/masynreas/datasets/baseA/ticket_procedural_gap"
+    },
+    "priority": {
+      "type": "uri",
+      "value": "https://example.org/masynreas/datasets/baseA/priority_normal"
+    },
+    "severity": {
+      "type": "uri",
+      "value": "https://example.org/masynreas/datasets/baseA/severity_minor"
+    }
+  }
+]

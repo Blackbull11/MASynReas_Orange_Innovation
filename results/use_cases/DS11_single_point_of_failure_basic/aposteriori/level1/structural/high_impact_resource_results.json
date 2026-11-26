@@ -1,0 +1,22 @@
+[
+  {
+    "ticket": {
+      "type": "uri",
+      "value": "https://example.org/masynreas/datasets/baseB/ticket_firewall_major"
+    },
+    "resource": {
+      "type": "uri",
+      "value": "https://example.org/masynreas/datasets/baseB/res_firewall_01"
+    },
+    "dependentResourceCount": {
+      "type": "typed-literal",
+      "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+      "value": "3"
+    },
+    "dependentApplicationCount": {
+      "type": "typed-literal",
+      "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+      "value": "0"
+    }
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "application": {
+      "type": "uri",
+      "value": "https://example.org/masynreas/datasets/baseB/app_customer_portal"
+    },
+    "module": {
+      "type": "uri",
+      "value": "https://example.org/masynreas/datasets/baseB/module_customer_portal"
+    },
+    "eventCount": {
+      "type": "typed-literal",
+      "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+      "value": "2"
+    }
+  }
+]

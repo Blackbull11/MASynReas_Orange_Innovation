@@ -1,0 +1,62 @@
+[
+  {
+    "ticket": {
+      "type": "uri",
+      "value": "https://example.org/masynreas/datasets/baseB/ticket_firewall_major"
+    },
+    "resource": {
+      "type": "uri",
+      "value": "https://example.org/masynreas/datasets/baseB/res_firewall_01"
+    }
+  },
+  {
+    "ticket": {
+      "type": "uri",
+      "value": "https://example.org/masynreas/datasets/baseB/ticket_firewall_major"
+    },
+    "resource": {
+      "type": "uri",
+      "value": "https://example.org/masynreas/datasets/baseB/res_firewall_01"
+    }
+  },
+  {
+    "ticket": {
+      "type": "uri",
+      "value": "https://example.org/masynreas/datasets/baseB/ticket_monitoring_warning"
+    },
+    "resource": {
+      "type": "uri",
+      "value": "https://example.org/masynreas/datasets/baseB/res_monitor_vm_01"
+    }
+  },
+  {
+    "ticket": {
+      "type": "uri",
+      "value": "https://example.org/masynreas/datasets/baseB/ticket_monitoring_warning"
+    },
+    "resource": {
+      "type": "uri",
+      "value": "https://example.org/masynreas/datasets/baseB/res_monitor_vm_01"
+    }
+  },
+  {
+    "ticket": {
+      "type": "uri",
+      "value": "https://example.org/masynreas/datasets/baseB/ticket_workforce_warning"
+    },
+    "resource": {
+      "type": "uri",
+      "value": "https://example.org/masynreas/datasets/baseB/res_workforce_vm_01"
+    }
+  },
+  {
+    "ticket": {
+      "type": "uri",
+      "value": "https://example.org/masynreas/datasets/baseB/ticket_workforce_warning"
+    },
+    "resource": {
+      "type": "uri",
+      "value": "https://example.org/masynreas/datasets/baseB/res_workforce_vm_01"
+    }
+  }
+]

@@ -1,0 +1,463 @@
+{
+  "dataset_id": "DS27_scalability_large",
+  "mode": "aposteriori",
+  "started_at": "2026-11-25T19:36:09+01:00",
+  "git_head": "a70869216dc674a82930034c19ababd4b814f4a8",
+  "git_branch": "use-cases-27",
+  "git_dirty_files": 36,
+  "agents_py_identical_to_origin_paul": true,
+  "origin_paul": "4738a689594e08c43cef9bc96ab050a932bf200d",
+  "sha256": {
+    "run_use_cases.py": "1a329a2d6829eeb46525ef49e581d5dc171cb3c916d028a22671294cdc2d78fc",
+    "diagnosis_llm.py": "9c0a18191d0735301b392618ee1451567a73f9234176aaeac75e3b6274892057"
+  },
+  "python": "C:\\Users\\paulc\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+  "sparql_url": "http://localhost:8890/sparql",
+  "virtuoso_container": "openlinkvirtuoso",
+  "status": "ok",
+  "durations_ms": {
+    "load": 62.8,
+    "l1": 29161.7,
+    "l2": 1377.2,
+    "total_l1_l2": 30538.9,
+    "wall_total": 31958.4
+  },
+  "triples": {
+    "expected_eval_results": 352,
+    "loaded_dataset_graph": 352,
+    "user_graphs": {
+      "http://dataset/": 352
+    }
+  },
+  "level1": [
+    {
+      "script": "src/agt/dynamic/aposteriori/change_followed_by_incident_detector.py",
+      "returncode": 0,
+      "timed_out": false,
+      "duration_ms": 988.6,
+      "outputs": [
+        "dynamic/aposteriori/change_followed_by_incident_results.json"
+      ],
+      "status": "ok",
+      "archived_output": "level1/dynamic/change_followed_by_incident_results.json"
+    },
+    {
+      "script": "src/agt/dynamic/aposteriori/change_overlap_conflict.py",
+      "returncode": 0,
+      "timed_out": false,
+      "duration_ms": 1005.5,
+      "outputs": [
+        "dynamic/aposteriori/change_overlap_conflict_results.json"
+      ],
+      "status": "ok",
+      "archived_output": "level1/dynamic/change_overlap_conflict_results.json"
+    },
+    {
+      "script": "src/agt/dynamic/aposteriori/critical_event_ticket_escalation_detector.py",
+      "returncode": 0,
+      "timed_out": false,
+      "duration_ms": 961.0,
+      "outputs": [
+        "dynamic/aposteriori/critical_event_ticket_escalation_results.json"
+      ],
+      "status": "ok",
+      "archived_output": "level1/dynamic/critical_event_ticket_escalation_results.json"
+    },
+    {
+      "script": "src/agt/dynamic/aposteriori/event_burst_detector.py",
+      "returncode": 0,
+      "timed_out": false,
+      "duration_ms": 939.3,
+      "outputs": [
+        "dynamic/aposteriori/event_burst_results.json"
+      ],
+      "status": "ok",
+      "archived_output": "level1/dynamic/event_burst_results.json"
+    },
+    {
+      "script": "src/agt/dynamic/aposteriori/flapping_state_detector.py",
+      "returncode": 0,
+      "timed_out": false,
+      "duration_ms": 826.0,
+      "outputs": [
+        "dynamic/aposteriori/flapping_state_results.json"
+      ],
+      "status": "ok",
+      "archived_output": "level1/dynamic/flapping_state_results.json"
+    },
+    {
+      "script": "src/agt/dynamic/aposteriori/incident_propagation_detector.py",
+      "returncode": 0,
+      "timed_out": false,
+      "duration_ms": 1128.7,
+      "outputs": [
+        "dynamic/aposteriori/incident_propagation_results.json"
+      ],
+      "status": "ok",
+      "archived_output": "level1/dynamic/incident_propagation_results.json"
+    },
+    {
+      "script": "src/agt/dynamic/aposteriori/multi_element_synchronous_incident_detector.py",
+      "returncode": 0,
+      "timed_out": false,
+      "duration_ms": 906.4,
+      "outputs": [
+        "dynamic/aposteriori/multi_element_synchronous_incident_results.json"
+      ],
+      "status": "ok",
+      "archived_output": "level1/dynamic/multi_element_synchronous_incident_results.json"
+    },
+    {
+      "script": "src/agt/dynamic/aposteriori/parent_child_event_escalation_detector.py",
+      "returncode": 0,
+      "timed_out": false,
+      "duration_ms": 1032.6,
+      "outputs": [
+        "dynamic/aposteriori/parent_child_event_results.json"
+      ],
+      "status": "ok",
+      "archived_output": "level1/dynamic/parent_child_event_results.json"
+    },
+    {
+      "script": "src/agt/dynamic/aposteriori/reopened_incident_detector.py",
+      "returncode": 0,
+      "timed_out": false,
+      "duration_ms": 1197.2,
+      "outputs": [
+        "dynamic/aposteriori/reopened_incident_results.json"
+      ],
+      "status": "ok",
+      "archived_output": "level1/dynamic/reopened_incident_results.json"
+    },
+    {
+      "script": "src/agt/dynamic/aposteriori/repeated_similar_event_detector.py",
+      "returncode": 0,
+      "timed_out": false,
+      "duration_ms": 837.6,
+      "outputs": [
+        "dynamic/aposteriori/repeated_similar_event_results.json"
+      ],
+      "status": "ok",
+      "archived_output": "level1/dynamic/repeated_similar_event_results.json"
+    },
+    {
+      "script": "src/agt/dynamic/aposteriori/silent_degradation_after_change_detector.py",
+      "returncode": 0,
+      "timed_out": false,
+      "duration_ms": 949.9,
+      "outputs": [
+        "dynamic/aposteriori/silent_degradation_after_change_results.json"
+      ],
+      "status": "ok",
+      "archived_output": "level1/dynamic/silent_degradation_after_change_results.json"
+    },
+    {
+      "script": "src/agt/dynamic/aposteriori/stale_incident_detector.py",
+      "returncode": 0,
+      "timed_out": false,
+      "duration_ms": 761.1,
+      "outputs": [
+        "dynamic/aposteriori/stale_incident_results.json"
+      ],
+      "status": "ok",
+      "archived_output": "level1/dynamic/stale_incident_results.json"
+    },
+    {
+      "script": "src/agt/functional/aposteriori/application_incident_without_resource_detector.py",
+      "returncode": 0,
+      "timed_out": false,
+      "duration_ms": 926.4,
+      "outputs": [
+        "functional/aposteriori/application_incident_without_resource_results.json"
+      ],
+      "status": "ok",
+      "archived_output": "level1/functional/application_incident_without_resource_results.json"
+    },
+    {
+      "script": "src/agt/functional/aposteriori/cascading_service_failure_detector.py",
+      "returncode": 0,
+      "timed_out": false,
+      "duration_ms": 928.5,
+      "outputs": [
+        "functional/aposteriori/cascading_service_failure_results.json"
+      ],
+      "status": "ok",
+      "archived_output": "level1/functional/cascading_service_failure_results.json"
+    },
+    {
+      "script": "src/agt/functional/aposteriori/conflicting_application_state_detector.py",
+      "returncode": 0,
+      "timed_out": false,
+      "duration_ms": 808.6,
+      "outputs": [
+        "functional/aposteriori/conflicting_application_state_results.json"
+      ],
+      "status": "ok",
+      "archived_output": "level1/functional/conflicting_application_state_results.json"
+    },
+    {
+      "script": "src/agt/functional/aposteriori/hidden_service_dependency_detector.py",
+      "returncode": 0,
+      "timed_out": false,
+      "duration_ms": 821.4,
+      "outputs": [
+        "functional/aposteriori/hidden_service_dependency_results.json"
+      ],
+      "status": "ok",
+      "archived_output": "level1/functional/hidden_service_dependency_results.json"
+    },
+    {
+      "script": "src/agt/functional/aposteriori/module_level_incident_aggregation_detector.py",
+      "returncode": 0,
+      "timed_out": false,
+      "duration_ms": 760.4,
+      "outputs": [
+        "functional/aposteriori/module_level_incident_aggregation_results.json"
+      ],
+      "status": "ok",
+      "archived_output": "level1/functional/module_level_incident_aggregation_results.json"
+    },
+    {
+      "script": "src/agt/functional/aposteriori/resource_event_without_service_impact_detector.py",
+      "returncode": 0,
+      "timed_out": false,
+      "duration_ms": 777.3,
+      "outputs": [
+        "functional/aposteriori/resource_event_without_service_impact_results.json"
+      ],
+      "status": "ok",
+      "archived_output": "level1/functional/resource_event_without_service_impact_results.json"
+    },
+    {
+      "script": "src/agt/functional/aposteriori/service_impacted_by_multiple_resources_detector.py",
+      "returncode": 0,
+      "timed_out": false,
+      "duration_ms": 1073.4,
+      "outputs": [
+        "functional/aposteriori/service_impacted_by_multiple_resources_results.json"
+      ],
+      "status": "ok",
+      "archived_output": "level1/functional/service_impacted_by_multiple_resources_results.json"
+    },
+    {
+      "script": "src/agt/functional/aposteriori/service_with_repeated_incident_detector.py",
+      "returncode": 0,
+      "timed_out": false,
+      "duration_ms": 803.1,
+      "outputs": [
+        "functional/aposteriori/service_with_repeated_incident_results.json"
+      ],
+      "status": "ok",
+      "archived_output": "level1/functional/service_with_repeated_incident_results.json"
+    },
+    {
+      "script": "src/agt/functional/aposteriori/service_without_ticket_escalation_detector.py",
+      "returncode": 0,
+      "timed_out": false,
+      "duration_ms": 837.0,
+      "outputs": [
+        "functional/aposteriori/service_without_ticket_escalation_results.json"
+      ],
+      "status": "ok",
+      "archived_output": "level1/functional/service_without_ticket_escalation_results.json"
+    },
+    {
+      "script": "src/agt/procedural/aposteriori/change_linked_to_multiple_incidents_detector.py",
+      "returncode": 0,
+      "timed_out": false,
+      "duration_ms": 928.7,
+      "outputs": [
+        "procedural/aposteriori/change_linked_to_multiple_incidents_results.json"
+      ],
+      "status": "ok",
+      "archived_output": "level1/procedural/change_linked_to_multiple_incidents_results.json"
+    },
+    {
+      "script": "src/agt/procedural/aposteriori/incident_without_ticket_detector.py",
+      "returncode": 0,
+      "timed_out": false,
+      "duration_ms": 1092.3,
+      "outputs": [
+        "procedural/aposteriori/incident_without_ticket_results.json"
+      ],
+      "status": "ok",
+      "archived_output": "level1/procedural/incident_without_ticket_results.json"
+    },
+    {
+      "script": "src/agt/procedural/aposteriori/ticket_without_linked_event_detector.py",
+      "returncode": 0,
+      "timed_out": false,
+      "duration_ms": 1409.4,
+      "outputs": [
+        "procedural/aposteriori/ticket_without_linked_event_results.json"
+      ],
+      "status": "ok",
+      "archived_output": "level1/procedural/ticket_without_linked_event_results.json"
+    },
+    {
+      "script": "src/agt/structural/aposteriori/application_mapping_inconsistency_detector.py",
+      "returncode": 0,
+      "timed_out": false,
+      "duration_ms": 966.3,
+      "outputs": [
+        "structural/aposteriori/application_mapping_inconsistency_results.json"
+      ],
+      "status": "ok",
+      "archived_output": "level1/structural/application_mapping_inconsistency_results.json"
+    },
+    {
+      "script": "src/agt/structural/aposteriori/child_component_incident_escalation_detector.py",
+      "returncode": 0,
+      "timed_out": false,
+      "duration_ms": 850.1,
+      "outputs": [
+        "structural/aposteriori/child_component_incident_escalation_results.json"
+      ],
+      "status": "ok",
+      "archived_output": "level1/structural/child_component_incident_escalation_results.json"
+    },
+    {
+      "script": "src/agt/structural/aposteriori/high_impact_resource_detector.py",
+      "returncode": 0,
+      "timed_out": false,
+      "duration_ms": 934.6,
+      "outputs": [
+        "structural/aposteriori/high_impact_resource_results.json"
+      ],
+      "status": "ok",
+      "archived_output": "level1/structural/high_impact_resource_results.json"
+    },
+    {
+      "script": "src/agt/structural/aposteriori/incident_on_incomplete_link_detector.py",
+      "returncode": 0,
+      "timed_out": false,
+      "duration_ms": 1000.2,
+      "outputs": [
+        "structural/aposteriori/incident_on_incomplete_link_results.json"
+      ],
+      "status": "ok",
+      "archived_output": "level1/structural/incident_on_incomplete_link_results.json"
+    },
+    {
+      "script": "src/agt/structural/aposteriori/isolated_incident_resource_detector.py",
+      "returncode": 0,
+      "timed_out": false,
+      "duration_ms": 922.2,
+      "outputs": [
+        "structural/aposteriori/isolated_incident_resource_results.json"
+      ],
+      "status": "ok",
+      "archived_output": "level1/structural/isolated_incident_resource_results.json"
+    },
+    {
+      "script": "src/agt/structural/aposteriori/no_redundancy_incident_detector.py",
+      "returncode": 0,
+      "timed_out": false,
+      "duration_ms": 801.9,
+      "outputs": [
+        "structural/aposteriori/no_redundancy_incident_results.json"
+      ],
+      "status": "ok",
+      "archived_output": "level1/structural/no_redundancy_incident_results.json"
+    },
+    {
+      "script": "src/agt/structural/aposteriori/spatial_incident_cluster_detector.py",
+      "returncode": 0,
+      "timed_out": false,
+      "duration_ms": 858.5,
+      "outputs": [
+        "structural/aposteriori/spatial_incident_cluster_results.json"
+      ],
+      "status": "ok",
+      "archived_output": "level1/structural/spatial_incident_cluster_results.json"
+    }
+  ],
+  "level2": [
+    {
+      "script": "src/agt/level2/aposteriori/application_support_failure_diagnoser.py",
+      "returncode": 0,
+      "timed_out": false,
+      "duration_ms": 167.5,
+      "outputs": [
+        "level2/aposteriori/application_support_failure_diagnoser.json"
+      ],
+      "status": "ok",
+      "archived_output": "level2/application_support_failure_diagnoser.json"
+    },
+    {
+      "script": "src/agt/level2/aposteriori/change_induced_incident_diagnoser.py",
+      "returncode": 0,
+      "timed_out": false,
+      "duration_ms": 174.8,
+      "outputs": [
+        "level2/aposteriori/change_induced_incident_diagnoser.json"
+      ],
+      "status": "ok",
+      "archived_output": "level2/change_induced_incident_diagnoser.json"
+    },
+    {
+      "script": "src/agt/level2/aposteriori/local_infrastructure_cluster_diagnoser.py",
+      "returncode": 0,
+      "timed_out": false,
+      "duration_ms": 208.9,
+      "outputs": [
+        "level2/aposteriori/local_infrastructure_cluster_diagnoser.json"
+      ],
+      "status": "ok",
+      "archived_output": "level2/local_infrastructure_cluster_diagnoser.json"
+    },
+    {
+      "script": "src/agt/level2/aposteriori/service_cascade_diagnoser.py",
+      "returncode": 0,
+      "timed_out": false,
+      "duration_ms": 123.8,
+      "outputs": [
+        "level2/aposteriori/service_cascade_diagnoser.json"
+      ],
+      "status": "ok",
+      "archived_output": "level2/service_cascade_diagnoser.json"
+    },
+    {
+      "script": "src/agt/level2/aposteriori/single_point_of_failure_diagnoser.py",
+      "returncode": 0,
+      "timed_out": false,
+      "duration_ms": 136.3,
+      "outputs": [
+        "level2/aposteriori/single_point_of_failure_diagnoser.json"
+      ],
+      "status": "ok",
+      "archived_output": "level2/single_point_of_failure_diagnoser.json"
+    },
+    {
+      "script": "src/agt/level2/aposteriori/traceability_breakdown_diagnoser.py",
+      "returncode": 0,
+      "timed_out": false,
+      "duration_ms": 215.5,
+      "outputs": [
+        "level2/aposteriori/traceability_breakdown_diagnoser.json"
+      ],
+      "status": "ok",
+      "archived_output": "level2/traceability_breakdown_diagnoser.json"
+    },
+    {
+      "script": "src/agt/level2/aposteriori/unstable_component_diagnoser.py",
+      "returncode": 0,
+      "timed_out": false,
+      "duration_ms": 290.3,
+      "outputs": [
+        "level2/aposteriori/unstable_component_diagnoser.json"
+      ],
+      "status": "ok",
+      "archived_output": "level2/unstable_component_diagnoser.json"
+    }
+  ],
+  "l3": {
+    "status": "ok",
+    "model": "llama3.2:3b",
+    "returncode": 0,
+    "timed_out": false,
+    "duration_ms": 1158.9,
+    "prompt_saved": true
+  },
+  "finished_at": "2026-11-25T19:36:41+01:00"
+}

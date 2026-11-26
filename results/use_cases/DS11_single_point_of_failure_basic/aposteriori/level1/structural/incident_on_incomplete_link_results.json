@@ -1,0 +1,25 @@
+[
+  {
+    "ticket": {
+      "type": "uri",
+      "value": "https://example.org/masynreas/datasets/baseB/ticket_firewall_major"
+    },
+    "resource": {
+      "type": "uri",
+      "value": "https://example.org/masynreas/datasets/baseB/res_firewall_01"
+    },
+    "interface": {
+      "type": "uri",
+      "value": "https://example.org/masynreas/datasets/baseB/if_firewall_01_port_01"
+    },
+    "link": {
+      "type": "uri",
+      "value": "https://example.org/masynreas/datasets/baseB/link_monitor_vm_01_to_firewall_01"
+    },
+    "endpointCount": {
+      "type": "typed-literal",
+      "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+      "value": "1"
+    }
+  }
+]

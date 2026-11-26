@@ -1,0 +1,8 @@
+[
+  {
+    "service": {
+      "type": "uri",
+      "value": "https://example.org/masynreas/datasets/baseA/service_customer_access"
+    }
+  }
+]

@@ -1,0 +1,31 @@
+[
+  {
+    "change": {
+      "type": "uri",
+      "value": "https://example.org/masynreas/datasets/baseB/change_customer_release"
+    },
+    "event": {
+      "type": "uri",
+      "value": "https://example.org/masynreas/datasets/baseB/event_customer_post_change"
+    },
+    "relatedElement": {
+      "type": "uri",
+      "value": "https://example.org/masynreas/datasets/baseB/app_customer_portal"
+    },
+    "changeEndTime": {
+      "type": "typed-literal",
+      "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+      "value": "2026-02-06T09:35:00Z"
+    },
+    "eventTime": {
+      "type": "typed-literal",
+      "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+      "value": "2026-02-06T09:40:00Z"
+    },
+    "delayMinutes": {
+      "type": "typed-literal",
+      "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+      "value": "5"
+    }
+  }
+]

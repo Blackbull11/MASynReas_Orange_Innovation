@@ -1,0 +1,36 @@
+[
+  {
+    "ticket": {
+      "type": "uri",
+      "value": "https://example.org/masynreas/datasets/baseB/ticket_customer_post_change"
+    },
+    "relatedElement": {
+      "type": "uri",
+      "value": "https://example.org/masynreas/datasets/baseB/res_customer_vm_01"
+    },
+    "ticketTime": {
+      "type": "typed-literal",
+      "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+      "value": "2026-02-06T09:45:00Z"
+    },
+    "ticketStatus": {
+      "type": "uri",
+      "value": "https://example.org/masynreas/datasets/baseB/status_open"
+    },
+    "followupEventCount": {
+      "type": "typed-literal",
+      "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+      "value": "1"
+    },
+    "firstFollowupEventTime": {
+      "type": "typed-literal",
+      "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+      "value": "2026-02-10T10:00:00Z"
+    },
+    "lastFollowupEventTime": {
+      "type": "typed-literal",
+      "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+      "value": "2026-02-10T10:00:00Z"
+    }
+  }
+]

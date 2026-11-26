@@ -1,0 +1,71 @@
+{
+  "note": "résultats GPU Mistral-7B du 24/04, non relancés",
+  "source": "llm_ablation_results.json (origin/paul)",
+  "model": "mistralai/Mistral-7B-Instruct-v0.3",
+  "entries": [
+    {
+      "dataset_id": "DS21_noisy_irrelevant_events",
+      "mode": "aposteriori",
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "expected": [],
+      "mas_reference": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "predicted": [],
+        "expected": []
+      },
+      "conditions": {
+        "A_graph_only": {
+          "metrics": {
+            "precision": 0.0,
+            "recall": 1.0,
+            "f1": 0.0,
+            "tp": 0,
+            "fp": 1,
+            "fn": 0,
+            "predicted": [
+              "single_point_of_failure_diagnoser"
+            ],
+            "expected": []
+          },
+          "elapsed_s": 4.1,
+          "raw_response": "{\"triggered\": [\"single_point_of_failure_diagnoser\"], \"primary_entities\": {\"single_point_of_failure_diagnoser\": \"baseB:res_firewall_02\"}}"
+        },
+        "B_graph_plus_L1": {
+          "metrics": {
+            "precision": 0.0,
+            "recall": 1.0,
+            "f1": 0.0,
+            "tp": 0,
+            "fp": 1,
+            "fn": 0,
+            "predicted": [
+              "single_point_of_failure_diagnoser"
+            ],
+            "expected": []
+          },
+          "elapsed_s": 4.0,
+          "raw_response": "{\"triggered\": [\"single_point_of_failure_diagnoser\"], \"primary_entities\": {\"single_point_of_failure_diagnoser\": \"res_firewall_02\"}}"
+        },
+        "C_graph_L1_L2": {
+          "metrics": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "predicted": [],
+            "expected": []
+          },
+          "elapsed_s": 2.3,
+          "raw_response": "{\"triggered\": [], \"primary_entities\": {}}"
+        }
+      }
+    }
+  ]
+}

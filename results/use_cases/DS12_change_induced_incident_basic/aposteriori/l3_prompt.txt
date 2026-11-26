@@ -1,0 +1,22 @@
+You are a network operations expert analyzing an ICT infrastructure.
+Based on the following automated detection results from a knowledge graph,
+write a concise technical diagnostic report in 3 to 5 sentences.
+Use the exact resource identifiers from the data.
+State the most critical issue first, explain which entities are affected,
+and give one concrete recommended action.
+Write plain prose — no bullet points, no headings.
+
+=== LEVEL-1 ALERTS (aposteriori) ===
+  [change followed by incident results]  change_customer_release, event_customer_post_change, app_customer_portal
+  [change overlap conflict results]  change_customer_hotfix, change_customer_release, app_customer_portal
+  [isolated incident resource results]  ticket_billing_warning, res_billing_api_01, ticket_customer_post_change, res_customer_vm_01, ticket_customer_warning, ticket_monitoring_warning
+  [module level incident aggregation results]  app_customer_portal, module_customer_portal
+  [service with repeated incident results]  service_customer_access
+  [spatial incident cluster results]  room_dc1
+  [stale incident results]  ticket_customer_post_change, res_customer_vm_01, status_open
+
+=== LEVEL-2 DIAGNOSES (aposteriori) ===
+  [change induced incident]  anchor=change_customer_release  reliability=55  severity=27  priority=42
+    → Change-induced incident is diagnosed for ChangeRequest 'change_customer_release' because a change is followed by an incident on a related element; changes overlap on the same related element converge on the same anchor. The evidence spans dynamic signal family/families.
+
+Diagnostic narrative:

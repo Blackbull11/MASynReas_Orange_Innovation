@@ -1,0 +1,96 @@
+{
+  "note": "résultats GPU Mistral-7B du 24/04, non relancés",
+  "source": "llm_ablation_results.json (origin/paul)",
+  "model": "mistralai/Mistral-7B-Instruct-v0.3",
+  "entries": [
+    {
+      "dataset_id": "DS23_three_diagnoses_ranked_by_urgency",
+      "mode": "aposteriori",
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "expected": [
+        "single_point_of_failure_diagnoser",
+        "traceability_breakdown_diagnoser",
+        "unstable_component_diagnoser"
+      ],
+      "mas_reference": {
+        "precision": 1.0,
+        "recall": 0.667,
+        "f1": 0.8,
+        "tp": 2,
+        "fp": 0,
+        "fn": 1,
+        "predicted": [
+          "single_point_of_failure_diagnoser",
+          "traceability_breakdown_diagnoser"
+        ],
+        "expected": [
+          "single_point_of_failure_diagnoser",
+          "traceability_breakdown_diagnoser",
+          "unstable_component_diagnoser"
+        ]
+      },
+      "conditions": {
+        "A_graph_only": {
+          "metrics": {
+            "precision": 1.0,
+            "recall": 0.333,
+            "f1": 0.5,
+            "tp": 1,
+            "fp": 0,
+            "fn": 2,
+            "predicted": [
+              "single_point_of_failure_diagnoser"
+            ],
+            "expected": [
+              "single_point_of_failure_diagnoser",
+              "traceability_breakdown_diagnoser",
+              "unstable_component_diagnoser"
+            ]
+          },
+          "elapsed_s": 5.2,
+          "raw_response": "{\"triggered\": [\"single_point_of_failure_diagnoser\"], \"primary_entities\": {\"single_point_of_failure_diagnoser\": \"baseB:res_monitor_vm_01\"}}"
+        },
+        "B_graph_plus_L1": {
+          "metrics": {
+            "precision": 1.0,
+            "recall": 0.333,
+            "f1": 0.5,
+            "tp": 1,
+            "fp": 0,
+            "fn": 2,
+            "predicted": [
+              "single_point_of_failure_diagnoser"
+            ],
+            "expected": [
+              "single_point_of_failure_diagnoser",
+              "traceability_breakdown_diagnoser",
+              "unstable_component_diagnoser"
+            ]
+          },
+          "elapsed_s": 5.1,
+          "raw_response": "{\"triggered\": [\"single_point_of_failure_diagnoser\"], \"primary_entities\": {\"single_point_of_failure_diagnoser\": \"res_firewall_01\"}}"
+        },
+        "C_graph_L1_L2": {
+          "metrics": {
+            "precision": 1.0,
+            "recall": 0.333,
+            "f1": 0.5,
+            "tp": 1,
+            "fp": 0,
+            "fn": 2,
+            "predicted": [
+              "single_point_of_failure_diagnoser"
+            ],
+            "expected": [
+              "single_point_of_failure_diagnoser",
+              "traceability_breakdown_diagnoser",
+              "unstable_component_diagnoser"
+            ]
+          },
+          "elapsed_s": 5.2,
+          "raw_response": "{\"triggered\": [\"single_point_of_failure_diagnoser\"], \"primary_entities\": {\"single_point_of_failure_diagnoser\": \"res_firewall_01\"}}"
+        }
+      }
+    }
+  ]
+}

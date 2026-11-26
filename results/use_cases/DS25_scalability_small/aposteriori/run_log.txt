@@ -1,0 +1,195 @@
+── src/agt/dynamic/aposteriori/change_followed_by_incident_detector.py  [ok] rc=0 831.3 ms
+[ChangeFollowedByIncidentDetector] Querying endpoint: http://localhost:8890/sparql
+[ChangeFollowedByIncidentDetector] Window = 30 minute(s).
+[ChangeFollowedByIncidentDetector] 0 change-followed-by-incident pattern(s) found.
+[ChangeFollowedByIncidentDetector] Results written to 'C:\Users\paulc\AppData\Roaming\jacamo\multiagentSystem\results\dynamic\aposteriori\change_followed_by_incident_results.json'.
+── src/agt/dynamic/aposteriori/change_overlap_conflict.py  [ok] rc=0 848.5 ms
+[ChangeOverlapConflictDetector] Querying endpoint: http://localhost:8890/sparql
+[ChangeOverlapConflictDetector] 0 overlapping change conflict pattern(s) found.
+[ChangeOverlapConflictDetector] Results written to 'C:\Users\paulc\AppData\Roaming\jacamo\multiagentSystem\results\dynamic\aposteriori\change_overlap_conflict_results.json'.
+── src/agt/dynamic/aposteriori/critical_event_ticket_escalation_detector.py  [ok] rc=0 951.2 ms
+[CriticalEventTicketEscalationDetector] Querying endpoint: http://localhost:8890/sparql
+[CriticalEventTicketEscalationDetector] Window = 30 minute(s).
+[CriticalEventTicketEscalationDetector] 0 critical-event-to-ticket-escalation pattern(s) found.
+[CriticalEventTicketEscalationDetector] Results written to 'C:\Users\paulc\AppData\Roaming\jacamo\multiagentSystem\results\dynamic\aposteriori\critical_event_ticket_escalation_results.json'.
+── src/agt/dynamic/aposteriori/event_burst_detector.py  [ok] rc=0 1096.7 ms
+[EventBurstDetector] Querying endpoint: http://localhost:8890/sparql
+[EventBurstDetector] Window = 5 minute(s), threshold = 5 event(s).
+[EventBurstDetector] 0 event burst pattern(s) found.
+[EventBurstDetector] Results written to 'C:\Users\paulc\AppData\Roaming\jacamo\multiagentSystem\results\dynamic\aposteriori\event_burst_results.json'.
+── src/agt/dynamic/aposteriori/flapping_state_detector.py  [ok] rc=0 962.2 ms
+[FlappingStateDetector] Querying endpoint: http://localhost:8890/sparql
+[FlappingStateDetector] Window = 10 minute(s), minimum state-related events = 3.
+[FlappingStateDetector] 0 flapping state pattern(s) found.
+[FlappingStateDetector] Results written to 'C:\Users\paulc\AppData\Roaming\jacamo\multiagentSystem\results\dynamic\aposteriori\flapping_state_results.json'.
+── src/agt/dynamic/aposteriori/incident_propagation_detector.py  [ok] rc=0 815.1 ms
+[IncidentPropagationDetector] Querying endpoint: http://localhost:8890/sparql
+[IncidentPropagationDetector] Window = 5 minute(s).
+[IncidentPropagationDetector] 0 incident propagation pattern(s) found.
+[IncidentPropagationDetector] Results written to 'C:\Users\paulc\AppData\Roaming\jacamo\multiagentSystem\results\dynamic\aposteriori\incident_propagation_results.json'.
+── src/agt/dynamic/aposteriori/multi_element_synchronous_incident_detector.py  [ok] rc=0 816.1 ms
+[MultiElementSynchronousIncidentDetector] Querying endpoint: http://localhost:8890/sparql
+[MultiElementSynchronousIncidentDetector] Window = 5 minute(s), minimum distinct elements = 3, minimum total events = 3.
+[MultiElementSynchronousIncidentDetector] 0 multi-element synchronous incident pattern(s) found.
+[MultiElementSynchronousIncidentDetector] Results written to 'C:\Users\paulc\AppData\Roaming\jacamo\multiagentSystem\results\dynamic\aposteriori\multi_element_synchronous_incident_results.json'.
+── src/agt/dynamic/aposteriori/parent_child_event_escalation_detector.py  [ok] rc=0 816.8 ms
+[ParentChildEventDetector] Querying endpoint: http://localhost:8890/sparql
+[ParentChildEventDetector] Window = 5 minute(s).
+[ParentChildEventDetector] 0 parent/child event pattern(s) found.
+[ParentChildEventDetector] Results written to 'C:\Users\paulc\AppData\Roaming\jacamo\multiagentSystem\results\dynamic\aposteriori\parent_child_event_results.json'.
+── src/agt/dynamic/aposteriori/reopened_incident_detector.py  [ok] rc=0 927.3 ms
+[ReopenedIncidentDetector] Querying endpoint: http://localhost:8890/sparql
+[ReopenedIncidentDetector] Reopen window = 7 day(s).
+[ReopenedIncidentDetector] 0 reopened incident pattern(s) found.
+[ReopenedIncidentDetector] Results written to 'C:\Users\paulc\AppData\Roaming\jacamo\multiagentSystem\results\dynamic\aposteriori\reopened_incident_results.json'.
+── src/agt/dynamic/aposteriori/repeated_similar_event_detector.py  [ok] rc=0 825.1 ms
+[RepeatedSimilarEventDetector] Querying endpoint: http://localhost:8890/sparql
+[RepeatedSimilarEventDetector] Window = 10 minute(s), threshold = 3 event(s).
+[RepeatedSimilarEventDetector] 0 repeated similar event pattern(s) found.
+[RepeatedSimilarEventDetector] Results written to 'C:\Users\paulc\AppData\Roaming\jacamo\multiagentSystem\results\dynamic\aposteriori\repeated_similar_event_results.json'.
+── src/agt/dynamic/aposteriori/silent_degradation_after_change_detector.py  [ok] rc=0 946.4 ms
+[SilentDegradationAfterChangeDetector] Querying endpoint: http://localhost:8890/sparql
+[SilentDegradationAfterChangeDetector] Monitoring window = 180 minute(s), minimum weak events = 3.
+[SilentDegradationAfterChangeDetector] 0 silent degradation after change pattern(s) found.
+[SilentDegradationAfterChangeDetector] Results written to 'C:\Users\paulc\AppData\Roaming\jacamo\multiagentSystem\results\dynamic\aposteriori\silent_degradation_after_change_results.json'.
+── src/agt/dynamic/aposteriori/stale_incident_detector.py  [ok] rc=0 1199.0 ms
+[StaleIncidentDetector] Querying endpoint: http://localhost:8890/sparql
+[StaleIncidentDetector] Minimum age = 2 day(s), minimum follow-up events = 1.
+[StaleIncidentDetector] 0 stale incident pattern(s) found.
+[StaleIncidentDetector] Results written to 'C:\Users\paulc\AppData\Roaming\jacamo\multiagentSystem\results\dynamic\aposteriori\stale_incident_results.json'.
+── src/agt/functional/aposteriori/application_incident_without_resource_detector.py  [ok] rc=0 1125.6 ms
+[ApplicationIncidentWithoutResourceDetector] Querying endpoint: http://localhost:8890/sparql
+[ApplicationIncidentWithoutResourceDetector] 0 application incident(s) without support resource found.
+[ApplicationIncidentWithoutResourceDetector] Results written to 'C:\Users\paulc\AppData\Roaming\jacamo\multiagentSystem\results\functional\aposteriori\application_incident_without_resource_results.json'.
+── src/agt/functional/aposteriori/cascading_service_failure_detector.py  [ok] rc=0 982.0 ms
+[CascadingServiceFailureDetector] Querying endpoint: http://localhost:8890/sparql
+[CascadingServiceFailureDetector] 0 cascading service failure pattern(s) found.
+[CascadingServiceFailureDetector] Results written to 'C:\Users\paulc\AppData\Roaming\jacamo\multiagentSystem\results\functional\aposteriori\cascading_service_failure_results.json'.
+── src/agt/functional/aposteriori/conflicting_application_state_detector.py  [ok] rc=0 889.3 ms
+[ConflictingApplicationStateDetector] Querying endpoint: http://localhost:8890/sparql
+[ConflictingApplicationStateDetector] 0 conflicting application state pattern(s) found.
+[ConflictingApplicationStateDetector] Results written to 'C:\Users\paulc\AppData\Roaming\jacamo\multiagentSystem\results\functional\aposteriori\conflicting_application_state_results.json'.
+── src/agt/functional/aposteriori/hidden_service_dependency_detector.py  [ok] rc=0 910.8 ms
+[HiddenServiceDependencyDetector] Querying endpoint: http://localhost:8890/sparql
+[HiddenServiceDependencyDetector] 0 hidden service dependency pattern(s) found.
+[HiddenServiceDependencyDetector] Results written to 'C:\Users\paulc\AppData\Roaming\jacamo\multiagentSystem\results\functional\aposteriori\hidden_service_dependency_results.json'.
+── src/agt/functional/aposteriori/module_level_incident_aggregation_detector.py  [ok] rc=0 824.8 ms
+[ModuleLevelIncidentAggregationDetector] Querying endpoint: http://localhost:8890/sparql
+[ModuleLevelIncidentAggregationDetector] 0 module-level incident aggregation pattern(s) found.
+[ModuleLevelIncidentAggregationDetector] Results written to 'C:\Users\paulc\AppData\Roaming\jacamo\multiagentSystem\results\functional\aposteriori\module_level_incident_aggregation_results.json'.
+── src/agt/functional/aposteriori/resource_event_without_service_impact_detector.py  [ok] rc=0 801.8 ms
+[ResourceEventWithoutServiceImpactDetector] Querying endpoint: http://localhost:8890/sparql
+[ResourceEventWithoutServiceImpactDetector] 0 resource event(s) without service impact found.
+[ResourceEventWithoutServiceImpactDetector] Results written to 'C:\Users\paulc\AppData\Roaming\jacamo\multiagentSystem\results\functional\aposteriori\resource_event_without_service_impact_results.json'.
+── src/agt/functional/aposteriori/service_impacted_by_multiple_resources_detector.py  [ok] rc=0 754.2 ms
+[ServiceImpactedByMultipleResourcesDetector] Querying endpoint: http://localhost:8890/sparql
+[ServiceImpactedByMultipleResourcesDetector] 0 service(s) impacted by multiple resources found.
+[ServiceImpactedByMultipleResourcesDetector] Results written to 'C:\Users\paulc\AppData\Roaming\jacamo\multiagentSystem\results\functional\aposteriori\service_impacted_by_multiple_resources_results.json'.
+── src/agt/functional/aposteriori/service_with_repeated_incident_detector.py  [ok] rc=0 813.6 ms
+[ServiceWithRepeatedIncidentDetector] Querying endpoint: http://localhost:8890/sparql
+[ServiceWithRepeatedIncidentDetector] 0 service(s) with repeated incidents found.
+[ServiceWithRepeatedIncidentDetector] Results written to 'C:\Users\paulc\AppData\Roaming\jacamo\multiagentSystem\results\functional\aposteriori\service_with_repeated_incident_results.json'.
+── src/agt/functional/aposteriori/service_without_ticket_escalation_detector.py  [ok] rc=0 855.2 ms
+[ServiceWithoutTicketEscalationDetector] Querying endpoint: http://localhost:8890/sparql
+[ServiceWithoutTicketEscalationDetector] 0 service(s) without ticket escalation found.
+[ServiceWithoutTicketEscalationDetector] Results written to 'C:\Users\paulc\AppData\Roaming\jacamo\multiagentSystem\results\functional\aposteriori\service_without_ticket_escalation_results.json'.
+── src/agt/procedural/aposteriori/change_linked_to_multiple_incidents_detector.py  [ok] rc=0 1199.5 ms
+[ChangeLinkedToMultipleIncidentsDetector] Querying endpoint: http://localhost:8890/sparql
+[ChangeLinkedToMultipleIncidentsDetector] 0 change request(s) linked to multiple incidents found.
+[ChangeLinkedToMultipleIncidentsDetector] Results written to 'C:\Users\paulc\AppData\Roaming\jacamo\multiagentSystem\results\procedural\aposteriori\change_linked_to_multiple_incidents_results.json'.
+── src/agt/procedural/aposteriori/incident_without_ticket_detector.py  [ok] rc=0 830.1 ms
+[IncidentWithoutTicketDetector] Querying endpoint: http://localhost:8890/sparql
+[IncidentWithoutTicketDetector] 0 incident event(s) without ticket found.
+[IncidentWithoutTicketDetector] Results written to 'C:\Users\paulc\AppData\Roaming\jacamo\multiagentSystem\results\procedural\aposteriori\incident_without_ticket_results.json'.
+── src/agt/procedural/aposteriori/ticket_without_linked_event_detector.py  [ok] rc=0 928.7 ms
+[TicketWithoutLinkedEventDetector] Querying endpoint: http://localhost:8890/sparql
+[TicketWithoutLinkedEventDetector] 0 ticket(s) without linked event found.
+[TicketWithoutLinkedEventDetector] Results written to 'C:\Users\paulc\AppData\Roaming\jacamo\multiagentSystem\results\procedural\aposteriori\ticket_without_linked_event_results.json'.
+── src/agt/structural/aposteriori/application_mapping_inconsistency_detector.py  [ok] rc=0 793.3 ms
+[ApplicationMappingInconsistencyDetector] Querying endpoint: http://localhost:8890/sparql
+[ApplicationMappingInconsistencyDetector] 0 incident-related application mapping inconsistency pattern(s) found.
+[ApplicationMappingInconsistencyDetector] Results written to 'C:\Users\paulc\AppData\Roaming\jacamo\multiagentSystem\results\structural\aposteriori\application_mapping_inconsistency_results.json'.
+── src/agt/structural/aposteriori/child_component_incident_escalation_detector.py  [ok] rc=0 1165.5 ms
+[ChildComponentIncidentEscalationDetector] Querying endpoint: http://localhost:8890/sparql
+[ChildComponentIncidentEscalationDetector] 0 child-component incident escalation pattern(s) found.
+[ChildComponentIncidentEscalationDetector] Results written to 'C:\Users\paulc\AppData\Roaming\jacamo\multiagentSystem\results\structural\aposteriori\child_component_incident_escalation_results.json'.
+── src/agt/structural/aposteriori/high_impact_resource_detector.py  [ok] rc=0 1022.6 ms
+[HighImpactResourceDetector] Querying endpoint: http://localhost:8890/sparql
+[HighImpactResourceDetector] 0 high-impact incident resource(s) found.
+[HighImpactResourceDetector] Results written to 'C:\Users\paulc\AppData\Roaming\jacamo\multiagentSystem\results\structural\aposteriori\high_impact_resource_results.json'.
+── src/agt/structural/aposteriori/incident_on_incomplete_link_detector.py  [ok] rc=0 949.3 ms
+[IncidentOnIncompleteLinkDetector] Querying endpoint: http://localhost:8890/sparql
+[IncidentOnIncompleteLinkDetector] 0 incident-related incomplete link pattern(s) found.
+[IncidentOnIncompleteLinkDetector] Results written to 'C:\Users\paulc\AppData\Roaming\jacamo\multiagentSystem\results\structural\aposteriori\incident_on_incomplete_link_results.json'.
+── src/agt/structural/aposteriori/isolated_incident_resource_detector.py  [ok] rc=0 1005.8 ms
+[IsolatedIncidentResourceDetector] Querying endpoint: http://localhost:8890/sparql
+[IsolatedIncidentResourceDetector] 0 isolated incident resource(s) found.
+[IsolatedIncidentResourceDetector] Results written to 'C:\Users\paulc\AppData\Roaming\jacamo\multiagentSystem\results\structural\aposteriori\isolated_incident_resource_results.json'.
+── src/agt/structural/aposteriori/no_redundancy_incident_detector.py  [ok] rc=0 953.3 ms
+[NoRedundancyIncidentDetector] Querying endpoint: http://localhost:8890/sparql
+[NoRedundancyIncidentDetector] 0 incident resource(s) without visible redundancy found.
+[NoRedundancyIncidentDetector] Results written to 'C:\Users\paulc\AppData\Roaming\jacamo\multiagentSystem\results\structural\aposteriori\no_redundancy_incident_results.json'.
+── src/agt/structural/aposteriori/spatial_incident_cluster_detector.py  [ok] rc=0 825.0 ms
+[SpatialIncidentClusterDetector] Querying endpoint: http://localhost:8890/sparql
+[SpatialIncidentClusterDetector] 0 spatial incident cluster(s) found.
+[SpatialIncidentClusterDetector] Results written to 'C:\Users\paulc\AppData\Roaming\jacamo\multiagentSystem\results\structural\aposteriori\spatial_incident_cluster_results.json'.
+── src/agt/level2/aposteriori/application_support_failure_diagnoser.py  [ok] rc=0 181.5 ms
+[Level2] Loaded application_incident_without_resource_detector: 0 record(s) from results/functional/aposteriori/application_incident_without_resource_results.json
+[Level2] Loaded application_mapping_inconsistency_detector: 0 record(s) from results/structural/aposteriori/application_mapping_inconsistency_results.json
+[Level2] Loaded resource_event_without_service_impact_detector: 0 record(s) from results/functional/aposteriori/resource_event_without_service_impact_results.json
+[Level2] Loaded conflicting_application_state_detector: 0 record(s) from results/functional/aposteriori/conflicting_application_state_results.json
+── src/agt/level2/aposteriori/change_induced_incident_diagnoser.py  [ok] rc=0 159.3 ms
+[Level2] Loaded change_followed_by_incident_detector: 0 record(s) from results/dynamic/aposteriori/change_followed_by_incident_results.json
+[Level2] Loaded change_overlap_conflict: 0 record(s) from results/dynamic/aposteriori/change_overlap_conflict_results.json
+[Level2] Loaded change_linked_to_multiple_incidents_detector: 0 record(s) from results/procedural/aposteriori/change_linked_to_multiple_incidents_results.json
+[Level2] Loaded critical_event_ticket_escalation_detector: 0 record(s) from results/dynamic/aposteriori/critical_event_ticket_escalation_results.json
+[Level2] Loaded silent_degradation_after_change_detector: 0 record(s) from results/dynamic/aposteriori/silent_degradation_after_change_results.json
+── src/agt/level2/aposteriori/local_infrastructure_cluster_diagnoser.py  [ok] rc=0 173.7 ms
+[Level2] Loaded spatial_incident_cluster_detector: 0 record(s) from results/structural/aposteriori/spatial_incident_cluster_results.json
+[Level2] Loaded parent_child_event_escalation_detector: 0 record(s) from results/dynamic/aposteriori/parent_child_event_results.json
+[Level2] Loaded incident_propagation_detector: 0 record(s) from results/dynamic/aposteriori/incident_propagation_results.json
+[Level2] Loaded multi_element_synchronous_incident_detector: 0 record(s) from results/dynamic/aposteriori/multi_element_synchronous_incident_results.json
+[Level2] Loaded incident_on_incomplete_link_detector: 0 record(s) from results/structural/aposteriori/incident_on_incomplete_link_results.json
+[Level2] Loaded high_impact_resource_detector: 0 record(s) from results/structural/aposteriori/high_impact_resource_results.json
+── src/agt/level2/aposteriori/service_cascade_diagnoser.py  [ok] rc=0 208.2 ms
+[Level2] Loaded cascading_service_failure_detector: 0 record(s) from results/functional/aposteriori/cascading_service_failure_results.json
+[Level2] Loaded hidden_service_dependency_detector: 0 record(s) from results/functional/aposteriori/hidden_service_dependency_results.json
+[Level2] Loaded module_level_incident_aggregation_detector: 0 record(s) from results/functional/aposteriori/module_level_incident_aggregation_results.json
+[Level2] Loaded service_impacted_by_multiple_resources_detector: 0 record(s) from results/functional/aposteriori/service_impacted_by_multiple_resources_results.json
+[Level2] Loaded service_with_repeated_incident_detector: 0 record(s) from results/functional/aposteriori/service_with_repeated_incident_results.json
+[Level2] Loaded incident_propagation_detector: 0 record(s) from results/dynamic/aposteriori/incident_propagation_results.json
+[Level2] Loaded multi_element_synchronous_incident_detector: 0 record(s) from results/dynamic/aposteriori/multi_element_synchronous_incident_results.json
+[Level2] Loaded parent_child_event_escalation_detector: 0 record(s) from results/dynamic/aposteriori/parent_child_event_results.json
+[Level2] Loaded critical_event_ticket_escalation_detector: 0 record(s) from results/dynamic/aposteriori/critical_event_ticket_escalation_results.json
+── src/agt/level2/aposteriori/single_point_of_failure_diagnoser.py  [ok] rc=0 155.4 ms
+[Level2] Loaded isolated_incident_resource_detector: 0 record(s) from results/structural/aposteriori/isolated_incident_resource_results.json
+[Level2] Loaded incident_on_incomplete_link_detector: 0 record(s) from results/structural/aposteriori/incident_on_incomplete_link_results.json
+[Level2] Loaded high_impact_resource_detector: 0 record(s) from results/structural/aposteriori/high_impact_resource_results.json
+[Level2] Loaded no_redundancy_incident_detector: 0 record(s) from results/structural/aposteriori/no_redundancy_incident_results.json
+[Level2] Loaded child_component_incident_escalation_detector: 0 record(s) from results/structural/aposteriori/child_component_incident_escalation_results.json
+── src/agt/level2/aposteriori/traceability_breakdown_diagnoser.py  [ok] rc=0 196.1 ms
+[Level2] Loaded incident_without_ticket_detector: 0 record(s) from results/procedural/aposteriori/incident_without_ticket_results.json
+[Level2] Loaded ticket_without_linked_event_detector: 0 record(s) from results/procedural/aposteriori/ticket_without_linked_event_results.json
+[Level2] Loaded service_without_ticket_escalation_detector: 0 record(s) from results/functional/aposteriori/service_without_ticket_escalation_results.json
+[Level2] Loaded ticket_without_assigned_procedure_detector: 0 record(s) from results/procedural/apriori/ticket_without_assigned_procedure_results.json
+[Level2] Loaded critical_event_ticket_escalation_detector: 0 record(s) from results/dynamic/aposteriori/critical_event_ticket_escalation_results.json
+── src/agt/level2/aposteriori/unstable_component_diagnoser.py  [ok] rc=0 293.7 ms
+[Level2] Loaded event_burst_detector: 0 record(s) from results/dynamic/aposteriori/event_burst_results.json
+[Level2] Loaded repeated_similar_event_detector: 0 record(s) from results/dynamic/aposteriori/repeated_similar_event_results.json
+[Level2] Loaded flapping_state_detector: 0 record(s) from results/dynamic/aposteriori/flapping_state_results.json
+[Level2] Loaded reopened_incident_detector: 0 record(s) from results/dynamic/aposteriori/reopened_incident_results.json
+[Level2] Loaded stale_incident_detector: 0 record(s) from results/dynamic/aposteriori/stale_incident_results.json
+── L3 diagnosis_llm.py
+[LLM] Mode: aposteriori
+[LLM] Results dir: C:\Users\paulc\AppData\Roaming\jacamo\multiagentSystem\results\use_cases\DS25_scalability_small\aposteriori
+[LLM] L1 active agents : 0
+[LLM] L2 triggered     : 0
+[LLM] Nothing to analyse.
+
+================================================================
+  DIAGNOSTIC NARRATIVE
+================================================================
+No anomalies detected — the network graph appears healthy.
+================================================================
+
+[LLM] Wrote C:\Users\paulc\AppData\Roaming\jacamo\multiagentSystem\results\use_cases\DS25_scalability_small\aposteriori\l3_prompt.txt and C:\Users\paulc\AppData\Roaming\jacamo\multiagentSystem\results\use_cases\DS25_scalability_small\aposteriori\l3_narrative.txt
